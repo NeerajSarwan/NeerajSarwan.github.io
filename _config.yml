@@ -4,7 +4,7 @@
 # baseurl is the website's URL without the hostname
 
 # If you are building a simple GitHub user page (http://username.github.io) then use these settings:
-url: "http://syeddanish41.github.io"
+url: "mlstack.me"
 baseurl: ""
 
 # If you are building a GitHub project page then use these settings:
@@ -55,7 +55,7 @@ author:
 
 # Select which links to shw in the footer
 footer-links-active:
-  rss: false
+  rss: true
   facebook: true
   email: true
   twitter: true
