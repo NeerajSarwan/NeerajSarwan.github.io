@@ -11,7 +11,7 @@ published: true
 </div>
 
 <div class="posts-list">
-  {% for post in site.tags.popular %}
+  {% for post in site.tags.diary %}
   <article>
     <a class="post-preview" href="{{ post.url | prepend: site.baseurl }}">
 	    <h2 class="post-title">{{ post.title }}</h2>
