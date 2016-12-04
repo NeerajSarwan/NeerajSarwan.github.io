@@ -2,6 +2,7 @@
 layout: page
 title: ML Stack
 subtitle: Machine Learning Stack
+css: "/css/index.css"
 published: true
 ---
 <div class="list-filters">
