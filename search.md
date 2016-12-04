@@ -20,5 +20,5 @@ css: "/css/search.css"
     s.parentNode.insertBefore(gcse, s);
   })();
 </script>
-<gcse:search>Loading. . Please wait</gcse:search>
+<gcse:search>Loading... Please wait</gcse:search>
 </div>
