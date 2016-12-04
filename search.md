@@ -1,7 +1,6 @@
 ---
 layout: default
 title: "Search ml_stack"
-css: "/css/search.css"
 ---
 
 # Search ml_stack
