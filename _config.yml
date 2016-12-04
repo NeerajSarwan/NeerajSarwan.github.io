@@ -27,7 +27,7 @@ navbar-links:
   Resources:
     - Learn markdown: "http://www.markdowntutorial.com/"
     - GitHub Pages: "https://pages.github.com/"
-  
+nav-search: "search"
 # Image to show in the navigation bar - image must be a square (width = height)
 # Remove this parameter if you don't want an image in the navbar
 avatar: "/img/13277744_799639860136832_39293698_a.jpg"
