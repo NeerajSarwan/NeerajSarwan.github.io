@@ -93,7 +93,7 @@ google_analytics: "71307915"
 
 # Excerpt Word Length
 # Truncates the excerpt to the specified number of words on the index page
-excerpt_length: 20
+excerpt_length: 0
 
 # --- Don't need to touch anything below here (but you can if you want) --- #
 
