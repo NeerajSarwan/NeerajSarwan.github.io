@@ -5,7 +5,6 @@ subtitle: Image classification
 published: true
 ---
 
-<!DOCTYPE html>
 <html>
 <head>
 <title>Upload</title>
