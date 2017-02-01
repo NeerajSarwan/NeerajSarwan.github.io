@@ -4,7 +4,7 @@ title: Image
 subtitle: Image recognition
 published: true
 ---
-<!DOCTYPE html>
+
 <html>
 <body>
 
