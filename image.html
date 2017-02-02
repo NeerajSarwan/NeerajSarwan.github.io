@@ -31,7 +31,7 @@ published: true
     <script>
     function myFunction() {
         var x = document.getElementById("myURL").value;
-        Algorithmia.client("simBrvTtxJZg/c/TZCBlTVKAm4p1")
+        Algorithmia.client("")
                .algo("algo://deeplearning/InceptionNet/1.0.2")
                .pipe(x)
                .then(function(output) {
