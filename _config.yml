@@ -14,16 +14,17 @@ baseurl: ""
 # Of course don't forget to change the username and projectname to YOUR username and project
 
 # Name of website
-title: ml_stack
+title: Syed Danish
 
 # Short description of your site
-description: Machine Learning Stack
+description: My Place
 
 # --- Navigation bar options --- #
 
 # List of links in the navigation bar
 navbar-links:
   About Me / Contact: "aboutme"
+  Projects : "projects"
   Resources:
     - Learn markdown: "http://www.markdowntutorial.com/"
     - GitHub Pages: "https://pages.github.com/"
