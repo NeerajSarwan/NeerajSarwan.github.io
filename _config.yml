@@ -3,10 +3,6 @@
 # url is the full website URL
 # baseurl is the website's URL without the hostname
 
-# If you are building a simple GitHub user page (http://username.github.io) then use these settings:
-url: ""
-baseurl: ""
-
 # If you are building a GitHub project page then use these settings:
 url: "http://syeddanish41.github.io/"
 baseurl: ""
@@ -23,8 +19,8 @@ description: My Place
 
 # List of links in the navigation bar
 navbar-links:
-  About Me / Contact: "aboutme"
-  Projects : "projects"
+  About Me: "aboutme"
+  Projects: "projects"
   Resources:
     - Learn markdown: "http://www.markdowntutorial.com/"
     - GitHub Pages: "https://pages.github.com/"
