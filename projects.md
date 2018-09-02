@@ -1,12 +1,12 @@
 ---
 layout: page
-title: ML Stack
-subtitle: Machine Learning Stack
+title: Projects
+subtitle: My Work
 published: true
 ---
 
 <div class="posts-list">
-  {% for post in site.tags.diary %}
+  {% for post in site.tags.Projects %}
   <article class="post-preview">
     <a href="{{ post.url | prepend: site.baseurl }}">
 	  <h2 class="post-title">{{ post.title }}</h2>
