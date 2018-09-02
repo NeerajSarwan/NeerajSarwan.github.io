@@ -24,7 +24,7 @@ navbar-links:
   Projects: ""
 # Image to show in the navigation bar - image must be a square (width = height)
 # Remove this parameter if you don't want an image in the navbar
-# avatar: "/img/DSC00011.JPG
+avatar: "/img/DSC00011__01__01__01.jpg"	
 
 # --- Footer options --- #
 
