@@ -10,6 +10,9 @@ gh-badge:
   - star
   - fork
   - follow
+tags:
+  - Projects
+  - Automation
 ---
 The term Artificial Intelligence has been around for more than half a century - it started out with a simple idea of automating the tasks requiring human intervention. It is the innate property of laziness(& innovation 😅) in humans that gave rise to the Idea - extending ourselves with intelligent "modules" which makes our lives easier/better.
 
