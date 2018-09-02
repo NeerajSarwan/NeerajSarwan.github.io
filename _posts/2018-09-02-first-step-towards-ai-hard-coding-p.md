@@ -23,7 +23,7 @@ I started out on the journey of AI following the same idea - automating the simp
 - Lastly, what should I name it? - 
 		
 ### Know-it-all Shower
-Fitted with ultrasound sensors to detect human presence, dc motors were clamped onto the shower knobs using metal contraptions, to operate when triggered. The water temperature control is implemented by "hard coding" the logic - for mildly cold weather turn left knob(cold water) by x degrees and right knob(hot water) by x + Δx and vice versa for hot weather.
+Fitted with ultrasound sensors to detect human presence, dc motors were clamped onto the shower knobs using metal contraptions - to operate when triggered. The water temperature control is implemented by "hard coding" the logic - for cold weather turn left knob(cold water) by x degrees and right knob(hot water) by x + Δx and vice versa for hot weather.
 
 Simple, right?
 
