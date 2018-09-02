@@ -5,7 +5,7 @@ title: First step towards AI - Hard Coding!
 subtitle: Hard Coding an Automated Shower
 bigimg: >-
   https://images.wallpaperscraft.com/image/danboard_cardboard_robot_shower_water_wet_53792_1920x1080.jpg
-gh-repo: 'https://github.com/syeddanish41/know-it-all-shower'
+gh-repo: syeddanish41/know-it-all-shower
 gh-badge:
   - star
   - fork
