@@ -38,7 +38,7 @@ author:
   twitter: "syeddanish_4"   # eg. daattali
   reddit: yourname    # eg. daattali
   google-plus: +yourname   # eg. +DeanAttali or 109424658772469020925
-  linkedin: "syed-danish-332952b2"  # eg. daattali
+  linkedin: "daftvader"  # eg. daattali
   xing: yourname      # eg. daattali
   stackoverflow: yourlink  # eg. "3943160/daattali"
   snapchat: yourname  # eg. daattali
@@ -48,14 +48,14 @@ author:
 
 # Select which links to shw in the footer
 footer-links-active:
+  linkedin: true
   rss: true
-  facebook: true
+  facebook: false
   email: true
   twitter: true
   google-plus: false
   github: true
   reddit: false
-  linkedin: false
   xing: false
   stackoverflow: false
   snapchat: false
