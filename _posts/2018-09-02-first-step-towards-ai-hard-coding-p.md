@@ -4,10 +4,7 @@ published: true
 title: First step towards AI - Hard Coding!
 subtitle: Hard Coding an Automated Shower
 gh-repo: syeddanish41/know-it-all-shower
-gh-badge:
-  - star
-  - fork
-  - follow
+gh-badge: [star, watch, follow]
 tags:
   - Projects
   - Automation
