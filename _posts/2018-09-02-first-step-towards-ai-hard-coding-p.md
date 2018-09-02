@@ -23,13 +23,13 @@ I started out on the journey of AI following the same idea - automating the simp
 - Lastly, what should I name it? - 
 		
 ### Know-it-all Shower
-Fitted with ultrasound sensors to detect human presence, dc motors are fitted on the shower knobs using metal contraptions, to operate when triggered. The water temperature control is implemented by "hard coding" the logic - for mildly cold weather turn left knob(cold water) by x degrees and right knob(hot water) by x + Δx and vice versa for hot weather.
+Fitted with ultrasound sensors to detect human presence, dc motors were clamped onto the shower knobs using metal contraptions, to operate when triggered. The water temperature control is implemented by "hard coding" the logic - for mildly cold weather turn left knob(cold water) by x degrees and right knob(hot water) by x + Δx and vice versa for hot weather.
 
 Simple, right?
 
 What started out as a fun project, it led me to research into the practical applications of AI over the years. This experience made me realize that the main problem is finding the problems. 
-After 4 years, I have been thinking about revisiting the idea and replace the "Hard Coded" part with a Reinforcement Learning algorithm to make it more AI-like.
+After 4 years, I have been exploring the idea of replacing the "Hard Coded" part with a Reinforcement Learning algorithm to make it more **AI-like**.
 
 **PS:** I won the third prize on Instructables in Home Automation Contest for this project. More detailed publication on know-it-all shower can be found [here](https://www.instructables.com/id/The-know-it-all-Shower/).
 
-Code [here](https://github.com/syeddanish41/know-it-all-shower).
+Code can be found [here](https://github.com/syeddanish41/know-it-all-shower).
