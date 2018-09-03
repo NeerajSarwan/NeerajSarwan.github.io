@@ -19,7 +19,7 @@ I started out on the journey of AI following the same idea - automating the simp
 - How to open the shower knobs? - DC Motors
 - Control them? - Duh.. you already have an Arduino 
 - Can I control the temperature? - Yes!
-- How? - **Hard Code it.**
+- How? - **Hard code it.**
 - Lastly, what should I name it? - 
 		
 ### Know-it-all Shower
