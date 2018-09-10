@@ -20,8 +20,8 @@ I started out on the journey of AI following the same idea - automating the simp
 - How to operate the shower knobs? - DC Motors
 - Well, How to coordinate different components?? - Duh.. you already have an Arduino
 - It will be fancy, if I could control the temperature? - Yes!
-- Dude, that’s genius, but how? – Hard code it. :sweat_smile:
-- Can I name it Jarvis - Eh, **Know-it-all Shower** is better.
+- Dude, that’s genius, but how? – Hard code it.
+- Can I name it Jarvis? - Eh, **Know-it-all Shower** is better.
 
         
 ### Know-it-all Shower
