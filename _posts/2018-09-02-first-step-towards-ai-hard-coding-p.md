@@ -33,7 +33,7 @@ What started out as a fun project years ago, led me to research into the practic
 Since then, I have been exploring the idea of replacing the “Hard Coded” temperature detector with a Reinforcement Learning algorithm that makes it an inch closer to **today’s AI**.
 
 
-PS: This novice experiment bagged the third prize on Instructables in Home Automation category. 
+**PS:** This novice experiment bagged the third prize on Instructables in Home Automation category. 
 If that seemed exciting to you, a detailed publication on Know-it-all Shower could be found on Instructables website - [here](https://www.instructables.com/id/The-know-it-all-Shower/).
 
 Code repository can be found on my Github page - [here](https://github.com/syeddanish41/know-it-all-shower).
