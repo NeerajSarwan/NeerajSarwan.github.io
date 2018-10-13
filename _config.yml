@@ -4,16 +4,16 @@
 # baseurl is the website's URL without the hostname
 
 # If you are building a GitHub project page then use these settings:
-url: "http://syeddanish41.github.io/"
+url: "http://NeerajSarwan.github.io/"
 baseurl: ""
 
 # Of course don't forget to change the username and projectname to YOUR username and project
 
 # Name of website
-title: Danish Syed 
+title: Neeraj Singh Sarwan 
 
 # Short description of your site
-description: My Place
+description: Little Experiments in Data Science
 
 # --- Navigation bar options --- #
 
@@ -31,14 +31,14 @@ avatar: "/img/DSC00011__01__01__01.jpg"
 # Change all these values or delete the ones you don't want.
 # Important: you must keep the "name" parameter, everything else you can remove
 author:
-  name: danish syed 
-  email: "syeddanish.ece@gmail.com"
-  facebook: "syeddanishhaider"  # eg. daattali
-  github: "syeddanish41"   # eg. daattali
-  twitter: "syeddanish_4"   # eg. daattali
+  name: neeraj singh sarwan 
+  email: "neeraj.sarvan@gmail.com"
+  facebook: "neeraj.sarvan"  # eg. daattali
+  github: "NeerajSarwan"   # eg. daattali
+  twitter: "NeerajSarvan"   # eg. daattali
   reddit: yourname    # eg. daattali
   google-plus: +yourname   # eg. +DeanAttali or 109424658772469020925
-  linkedin: "daftvader"  # eg. daattali
+  linkedin: "neeraj-singh-sarwan"  # eg. daattali
   xing: yourname      # eg. daattali
   stackoverflow: yourlink  # eg. "3943160/daattali"
   snapchat: yourname  # eg. daattali
@@ -72,14 +72,14 @@ share-links-active:
 
 # How to display the link to the website in the footer
 # Remove this if you don't want a link in the footer
-url-pretty: "syeddanish41.github.io"  # eg. "deanattali.com/beautiful-jekyll"
+url-pretty: "NeerajSarwan.github.io"  # eg. "deanattali.com/beautiful-jekyll"
 
 # --- Misc --- #
 # Fill in your Disqus shortname (NOT the userid) if you want to support Disqus comments
-disqus: "syeddanish41-github-io-1"
+disqus: "neerajsarwan-github-io"
 
 # Fill in your Google Analytics ID to track your website using GA
-google_analytics: "71307915"
+google_analytics: "UA-127416496-1"
 
 # Facebook App ID
 # fb_app_id: ""
