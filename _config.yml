@@ -49,7 +49,7 @@ author:
 # Select which links to shw in the footer
 footer-links-active:
   linkedin: true
-  rss: true
+  rss: false
   facebook: false
   email: true
   twitter: true
