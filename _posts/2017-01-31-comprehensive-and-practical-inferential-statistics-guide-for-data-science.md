@@ -352,7 +352,17 @@ To perform an ANOVA, you must have a continuous response variable and at least o
 
 ANOVA is measured using a statistic known as F-Ratio. It is defined as the ratio of Mean Square (between groups) to the Mean Square (within group).
 
-Mean Square (between groups) = Sum of Squares (between groups) / degree of freedom (between groups) Mean Square (within group) = Sum of Squares (within group) / degree of freedom (within group) ![](https://s3-ap-south-1.amazonaws.com/av-blog-media/wp-content/uploads/2017/01/20071114/Screenshot-from-2017-01-20-04-38-39.png)![](https://s3-ap-south-1.amazonaws.com/av-blog-media/wp-content/uploads/2017/01/30124859/eq_5-300x107.png) ![](https://s3-ap-south-1.amazonaws.com/av-blog-media/wp-content/uploads/2017/01/30124918/eq_6-300x118.png) ![](https://s3-ap-south-1.amazonaws.com/av-blog-media/wp-content/uploads/2017/01/30125021/eq_7-300x145.png)
+Mean Square (between groups) = Sum of Squares (between groups) / degree of freedom (between groups)  
+
+Mean Square (within group) = Sum of Squares (within group) / degree of freedom (within group)  
+
+![](https://s3-ap-south-1.amazonaws.com/av-blog-media/wp-content/uploads/2017/01/20071114/Screenshot-from-2017-01-20-04-38-39.png)  
+
+![](https://s3-ap-south-1.amazonaws.com/av-blog-media/wp-content/uploads/2017/01/30124859/eq_5-300x107.png)  
+
+![](https://s3-ap-south-1.amazonaws.com/av-blog-media/wp-content/uploads/2017/01/30124918/eq_6-300x118.png)  
+
+![](https://s3-ap-south-1.amazonaws.com/av-blog-media/wp-content/uploads/2017/01/30125021/eq_7-300x145.png)  
 
 Here, **p** = represents the number of groups
 
