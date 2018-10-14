@@ -291,6 +291,7 @@ Furthermore, if we are interested in the probability of number of heads _z_ turn
   <img src="https://latex.codecogs.com/gif.latex?P%28z%2CN%7C%5Ctheta%20%29%3D%5Ctheta%20%5E%7Bz%7D.%281-%5Ctheta%29%5E%7BN-z%7D"/>
 </p>  
 
+<br>
 
 ### 4.2. Prior Belief  Distribution
 
@@ -298,21 +299,34 @@ This distribution is used to represent our strengths on beliefs about the parame
 
 But, what if one has no previous experience?
 
-Don't worry. Mathematicians have devised methods to mitigate this problem too. It is known as `uninformative priors`_._ I would like to inform you beforehand that it is just a misnomer. Every uninformative prior always provides some information event the constant distribution prior.
+Don't worry. Mathematicians have devised methods to mitigate this problem too. It is known as **_uninformative priors_**. I would like to inform you beforehand that it is just a misnomer. Every uninformative prior always provides some information event the constant distribution prior.
 
-Well, the mathematical function used to represent the prior beliefs is known as _`beta distribution`**. **_It has some very nice mathematical properties which enable us to model our beliefs about a binomial distribution.
+Well, the mathematical function used to represent the prior beliefs is known as **_beta distribution_**. It has some very nice mathematical properties which enable us to model our beliefs about a binomial distribution.
 
-Probability density function of beta distribution is of the form : ![](https://latex.codecogs.com/gif.latex?x%5E%7B%5Calpha%20-1%7D.%281-x%29%5E%7B%5Cbeta%20-1%7D/B%28%5Calpha%20%2C%5Cbeta%20%29)
+Probability density function of beta distribution is of the form :  ![](https://latex.codecogs.com/gif.latex?x%5E%7B%5Calpha%20-1%7D.%281-x%29%5E%7B%5Cbeta%20-1%7D/B%28%5Calpha%20%2C%5Cbeta%20%29)
 
 where, our focus stays on numerator. The denominator is there just to ensure that the total probability density function upon integration evaluates to 1.
 
 `α` and `β` are called the shape deciding parameters of the density function. Here `α` is analogous to number of heads in the trials and `β` corresponds to the number of tails. The diagrams below will help you visualize the beta distributions for different values of `α` and `β`
 
-![Bayesian update using Beta-Binomial Model](https://s3.amazonaws.com/quantstart/media/images/qs-bayes-bernoulli.png) You too can draw the beta distribution for yourself using the following code in R: `> library(stats)` `> par(mfrow=c(3,2))` `> x=seq(0,1,by=o.1)` `> alpha=c(0,2,10,20,50,500)` `> beta=c(0,2,8,11,27,232)` `> for(i in 1:length(alpha)){` `y<-dbeta(x,shape1=alpha[i],shape2=beta[i])` `plot(x,y,type="l")` `}`
+![Bayesian update using Beta-Binomial Model](https://s3.amazonaws.com/quantstart/media/images/qs-bayes-bernoulli.png) You too can draw the beta distribution for yourself using the following code in R:  
+
+`> library(stats)`  
+`> par(mfrow=c(3,2))`  
+`> x=seq(0,1,by=o.1)`  
+`> alpha=c(0,2,10,20,50,500)`  
+`> beta=c(0,2,8,11,27,232)`  
+`> for(i in 1:length(alpha)){`  
+  `y<-dbeta(x,shape1=alpha[i],shape2=beta[i])`  
+  `plot(x,y,type="l")`  
+`}`  
 
 _Note:_ `α` and `β` are intuitive to understand since they can be calculated by knowing the mean (μ) and standard deviation (σ) of the distribution. In fact, they are related as :
 
-![](https://latex.codecogs.com/gif.latex?%5Cmu%20%3D%20%5Cfrac%7B%5Calpha%7D%7B%5Calpha%20&plus;%20%5Cbeta%7D) ![](https://latex.codecogs.com/gif.latex?%5Csigma%20%3D%20%5Csqrt%7B%5Cfrac%7B%5Calpha%20%5Cbeta%7D%7B%28%5Calpha%20&plus;%20%5Cbeta%29%5E2%20%28%5Calpha%20&plus;%20%5Cbeta%20&plus;%201%29%7D%7D) If mean and standard deviation of a distribution are known , then there shape parameters can be easily calculated. **Inference drawn from graphs above:**
+![](https://latex.codecogs.com/gif.latex?%5Cmu%20%3D%20%5Cfrac%7B%5Calpha%7D%7B%5Calpha%20&plus;%20%5Cbeta%7D) ![](https://latex.codecogs.com/gif.latex?%5Csigma%20%3D%20%5Csqrt%7B%5Cfrac%7B%5Calpha%20%5Cbeta%7D%7B%28%5Calpha%20&plus;%20%5Cbeta%29%5E2%20%28%5Calpha%20&plus;%20%5Cbeta%20&plus;%201%29%7D%7D)  
+
+
+If mean and standard deviation of a distribution are known , then there shape parameters can be easily calculated. **Inference drawn from graphs above:**
 
 1.  When there was no toss we believed that every fairness of coin is possible as depicted by the flat line.
 2.  When there were more number of heads than the tails, the graph showed a peak shifted towards the right side, indicating higher probability of heads and that coin is not fair.
