@@ -429,6 +429,7 @@ So, we need to calculate any two of the three parameters using the data table an
 
 As, per the formula above, we need one more statistic i.e Grand Mean denoted by X(bar) in the formula above.  
 
+<br>
 
 **X bar** = (643+655+702+469+427+525+484+456+402)/9 = 529.22
 
@@ -442,6 +443,7 @@ As, per the formula above, we need one more statistic i.e Grand Mean denoted by 
 
 **F-Ratio** = MS(B) / MS(W) = 25.17 .  
 
+<br>
 
 Now, for a 95 % confidence level, F-critical to reject Null Hypothesis for degrees of freedom(2,6) is 5.14 but we have 25.17 as our F-Ratio.
 
