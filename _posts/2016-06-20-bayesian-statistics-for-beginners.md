@@ -128,7 +128,9 @@ For example: Assume two partially intersecting sets A and B as shown below.
 
 Set A represents one set of events and Set B represents another. We wish to calculate the probability of A given B has already happened. Lets represent the happening of event B by shading it with red.
 
-![1](https://www.analyticsvidhya.com/wp-content/uploads/2016/06/1-1.jpg)  
+<p align="center">
+  <img src="https://www.analyticsvidhya.com/wp-content/uploads/2016/06/1-1.jpg"/>
+</p>
 
 
 Now since B has happened, the part which now matters for A is the part shaded in blue which is interestingly ![CodeCogsEqn](https://www.analyticsvidhya.com/wp-content/uploads/2016/06/CodeCogsEqn-1.gif). So, the probability of A given B turns out to be:  
