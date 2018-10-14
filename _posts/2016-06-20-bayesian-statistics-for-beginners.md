@@ -406,7 +406,7 @@ Without going into the rigorous mathematical structures, this section will provi
 
  
 
-### 5.1. p-value
+### 5.1 - p-value
 
 In this, the t-score for a particular sample from a sampling distribution of _fixed size _is calculated. Then, p-values are predicted. We can interpret p values as (taking an example of p-value as 0.02 for a distribution of mean 100) : There is 2% probability that the sample will have mean equal to 100.
 
@@ -414,13 +414,13 @@ This interpretation suffers from the flaw that for sampling distributions of dif
 
  
 
-### 5.2. Confidence Intervals
+### 5.2 - Confidence Intervals
 
 Confidence Intervals also suffer from the same defect. Moreover since C.I is not a probability distribution , there is no way to know which values are most probable.
 
  
 
-### 5.3. Bayes Factor
+### 5.3 - Bayes Factor
 
 Bayes factor is the equivalent of p-value in the bayesian framework. Lets understand it in an comprehensive manner.
 
@@ -454,7 +454,7 @@ We can see the immediate benefits of using Bayes Factor instead of p-values sinc
 
  
 
-### 5.4. High Density Interval (HDI)
+### 5.4 - High Density Interval (HDI)
 
 HDI is formed from the posterior distribution after observing the new data. Since HDI is a probability, the 95% HDI gives the 95% most credible values. It is also guaranteed that 95 % values will lie in this interval unlike C.I.
 
