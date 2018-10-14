@@ -117,7 +117,7 @@ Population Distribution
 
 But how ? This will be explained using a very important theorem in statistics - **The Central Limit Theorem.**  
 
-### 3.1 Central Limit Theorem
+### 3.1 - Central Limit Theorem
 
 It states that when plotting a sampling distribution of means, the mean of sample means will be equal to the population mean. And the sampling distribution will approach a normal distribution with variance equal to σ/√n where σ is the standard deviation of population and n is the sample size.
 
@@ -141,7 +141,7 @@ Now, since we have collected the samples and plotted their means, it is importan
 
  
 
-### 3.2 Confidence Interval
+### 3.2 - Confidence Interval
 
 The confidence interval is a type of interval estimate from the sampling distribution which gives a range of values in which the population statistic may lie. Let us understand this with the help of an example.
 
@@ -189,7 +189,7 @@ Many people do not have right knowledge about confidence interval and often inte
 
  
 
-### 3.3 Practical example
+### 3.3 - Practical example
 
 Calculate the 95% confidence interval for a sample mean of 40 and sample standard deviation of 40 with sample size equal to 100.  
 
@@ -271,7 +271,7 @@ Points to note about the t-tests:
 7\. Different types of t-tests
 ------------------------------
 
-### 7.1 1-sample t-test
+### 7.1 - 1-sample t-test
 
 This is the same test as we described above. This test is used to:
 
@@ -291,7 +291,7 @@ where,
 **N** = sample size  
 
 
-### 7.2 Paired t-test
+### 7.2 - Paired t-test
 
 Paired t-test is performed to check whether there is a difference in mean after a treatment on a sample in comparison to before. It checks whether the Null hypothesis: The difference between the means is Zero, can be rejected or not.
 
@@ -314,7 +314,7 @@ where, **d (bar)** = mean of the case wise difference between before and after,
 
  
 
-### 7.3 2-sample t-test
+### 7.3 - 2-sample t-test
 
 This test is used to determine:
 
@@ -338,7 +338,7 @@ where, **X1 (bar)** = mean of the first group
 
  
 
-### 7.4 Practical example
+### 7.4 - Practical example
 
 We will understand how to identify which t-test to be used and then proceed on to solve it. The other t-tests will follow the same argument.
 
@@ -413,7 +413,7 @@ Within groups : If N represents the total observations in ANOVA (∑n over all g
 
  
 
-### 8.1 Steps to perform ANOVA
+### 8.1 - Steps to perform ANOVA
 
 1.  Hypothesis Generation
     1.  Null Hypothesis : Means of all the groups are same
@@ -432,11 +432,11 @@ Practical applications of ANOVA in modeling are:
 
  
 
-### 8.2 Practical Example
+### 8.2 - Practical Example
 
 Suppose there are 3 chocolates in town and their sweetness is quantified by some metric (S). Data is collected on the three chocolates. You are given the task to identify whether the mean sweetness of the 3 chocolates are different. The data is given as below:
 
-                                                                 Type A                    Type B                   Type C
+                                                               Type A                    Type B                   Type C
 
 <p align="center">
   <img src="https://s3-ap-south-1.amazonaws.com/av-blog-media/wp-content/uploads/2017/01/20071549/Screenshot-from-2017-01-20-04-43-12.png"/>
@@ -566,7 +566,9 @@ where,
 
 **f(x)** = predicted value  
 
-**Interpretation of Residual Sum of Squares -** It can be interpreted as the amount by which the predicted values deviated from the actual values. Large deviation would indicate that the model failed at predicting the correct values for the dependent variable. Let us now  work out F-ratio step by step. We will be making using of the Hypothesis Testing framework described above to test the significance of the model. While calculating the F-Ratio care has to be taken to incorporate the effect of degree of freedom. Mathematically, F-Ratio is the ratio of **\[Regression Sum of Squares/df(regression)\] and \[Residual Sum of Squares/df(residual)\].** We will be understanding the entire concept using an example and [this excel sheet](https://drive.google.com/file/d/0ByAvlBzuj2TgV0RDM0FORkQ3YW8/view).
+**Interpretation of Residual Sum of Squares -** It can be interpreted as the amount by which the predicted values deviated from the actual values. Large deviation would indicate that the model failed at predicting the correct values for the dependent variable. Let us now  work out F-ratio step by step. We will be making using of the Hypothesis Testing framework described above to test the significance of the model. While calculating the F-Ratio care has to be taken to incorporate the effect of degree of freedom.  
+Mathematically, F-Ratio is the ratio of **\[Regression Sum of Squares/df(regression)\] and \[Residual Sum of Squares/df(residual)\].**  
+We will be understanding the entire concept using an example and [this excel sheet](https://drive.google.com/file/d/0ByAvlBzuj2TgV0RDM0FORkQ3YW8/view).
 
 #### Step 0: State the Null and Alternate Hypothesis
 
