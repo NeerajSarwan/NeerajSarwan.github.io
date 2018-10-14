@@ -428,13 +428,20 @@ The _null hypothesis_ in bayesian framework assumes ∞ probability distribution
 
 The _alternative hypothesis_ is that all values of θ are possible, hence a flat curve representing the distribution. (M2)
 
-Now, posterior distribution of the new data looks like below. ![](https://dl2.pushbulletusercontent.com/LOpQQ3QTLuyyj3ji7cDFsCLfUvEA664e/Screenshot%20%2842%29.png)
+Now, posterior distribution of the new data looks like below.  
+
+![](https://dl2.pushbulletusercontent.com/LOpQQ3QTLuyyj3ji7cDFsCLfUvEA664e/Screenshot%20%2842%29.png)  
+
 
 Bayesian statistics adjusted credibility (probability) of various values of θ. It can be easily seen that the probability distribution has shifted towards M2 with a value higher than M1 i.e M2 is more likely to happen.
 
 Bayes factor does not depend upon the actual distribution values of θ but the magnitude of shift in values of M1 and M2.
 
-In panel A (shown above): left bar (M1) is the prior probability of the null hypothesis. In panel B (shown), the left bar is the posterior probability of the null hypothesis. Bayes factor is defined as the ratio of the posterior odds to the prior odds, ![](https://latex.codecogs.com/gif.latex?BF%3D%20%5Cfrac%7BP%28M%3Dnull%7Cz%2CN%29%7D%7BP%28M%3Dalt%7Cz%2CN%29%7D/%5Cfrac%7BP%28M%3Dnull%29%7D%7BP%28M%3Dalt%29%7D) To reject a null hypothesis, a BF <1/10 is preferred.
+In panel A (shown above): left bar (M1) is the prior probability of the null hypothesis. In panel B (shown), the left bar is the posterior probability of the null hypothesis. Bayes factor is defined as the ratio of the posterior odds to the prior odds,  
+
+![](https://latex.codecogs.com/gif.latex?BF%3D%20%5Cfrac%7BP%28M%3Dnull%7Cz%2CN%29%7D%7BP%28M%3Dalt%7Cz%2CN%29%7D/%5Cfrac%7BP%28M%3Dnull%29%7D%7BP%28M%3Dalt%29%7D)  
+
+To reject a null hypothesis, a BF <1/10 is preferred.
 
 We can see the immediate benefits of using Bayes Factor instead of p-values since they are independent of intentions and sample size.
 
