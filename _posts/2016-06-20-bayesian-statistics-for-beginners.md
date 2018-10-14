@@ -376,7 +376,24 @@ Then , `α= 13.8` , `β=9.2`
 
 i.e our distribution will be biased on the right side. Suppose, you observed 80 heads (`z=80`) in 100 flips(`N=100`). Let's see how our prior and posterior beliefs are going to look:
 
-`prior = P(θ|α,β)=P(θ|13.8,9.2)` `Posterior = P(θ|z+α,N-z+β)=P(θ|93.8,29.2)` Lets visualize both the beliefs on a graph: ![](https://dl2.pushbulletusercontent.com/wzZgYSQOOP4zP1TnH8GWl967VyZBVG6s/new.jpg) The R code for the above graph is as: `> library(stats)` `> x=seq(0,1,by=0.1)` `> alpha=c(13.8,93.8)` `> beta=c(9.2,29.2) > ``for(i in 1:length(alpha)){` `y<-dbeta(x,shape1=alpha[i],shape2=beta[i])` `      plot(x,y,type="l",xlab = "theta",ylab = "density")` `}`
+`prior = P(θ|α,β)=P(θ|13.8,9.2)`  
+`Posterior = P(θ|z+α,N-z+β)=P(θ|93.8,29.2)`  
+
+Lets visualize both the beliefs on a graph:  
+
+![](https://dl2.pushbulletusercontent.com/wzZgYSQOOP4zP1TnH8GWl967VyZBVG6s/new.jpg)  
+
+The R code for the above graph is as:  
+
+`> library(stats)`  
+`> x=seq(0,1,by=0.1)`  
+`> alpha=c(13.8,93.8)`  
+`> beta=c(9.2,29.2) > `  
+`for(i in 1:length(alpha)){`  
+  `y<-dbeta(x,shape1=alpha[i],shape2=beta[i])`  
+  `plot(x,y,type="l",xlab = "theta",ylab = "density")`  
+`}`  
+
 
 As more and more flips are made and new data is observed, our beliefs get updated. This is the real power of Bayesian Inference.
 
