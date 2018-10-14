@@ -179,21 +179,33 @@ Probably, you guessed it right. It looks like **Bayes Theorem**. Bayes  theorem
 
 Bayes Theorem comes into effect when multiple events ![](https://latex.codecogs.com/gif.latex?%5EA%7Bi%7D) form an exhaustive set with another event B. This could be understood with the help of the below diagram.  
 
-![Capture](https://www.analyticsvidhya.com/wp-content/uploads/2016/06/Capture.png)  
+<p align="center">
+  <img src="https://www.analyticsvidhya.com/wp-content/uploads/2016/06/Capture.png"/>
+</p>  
 
 Now, B can be written as  
 
-![](https://latex.codecogs.com/gif.latex?B%3D%5Csum_%7Bi%3D1%7D%5E%7Bn%7D%20B%5Ccap%20A_%7Bi%7D)  
+<p align="center">
+  <img src="https://latex.codecogs.com/gif.latex?B%3D%5Csum_%7Bi%3D1%7D%5E%7Bn%7D%20B%5Ccap%20A_%7Bi%7D"/>
+</p>  
 
 So, probability of B can be written as,  
 
-![](https://latex.codecogs.com/gif.latex?P%28B%29%3D%5Csum_%7Bi%3D1%7D%5E%7Bn%7D%20P%28B%5Ccap%20A_%7Bi%7D%29)  
+<p align="center">
+  <img src="https://latex.codecogs.com/gif.latex?P%28B%29%3D%5Csum_%7Bi%3D1%7D%5E%7Bn%7D%20P%28B%5Ccap%20A_%7Bi%7D%29"/>
+</p>  
 
-But![](https://s3-ap-south-1.amazonaws.com/av-blog-media/wp-content/uploads/2016/06/23104634/Capture1.png)  
+But  
+
+<p align="center">
+  <img src="https://s3-ap-south-1.amazonaws.com/av-blog-media/wp-content/uploads/2016/06/23104634/Capture1.png"/>
+</p>  
 
 So, replacing P(B) in the equation of conditional probability we get  
 
-![](https://s3-ap-south-1.amazonaws.com/av-blog-media/wp-content/uploads/2016/06/23105401/Capture2.png)  
+<p align="center">
+  <img src="https://s3-ap-south-1.amazonaws.com/av-blog-media/wp-content/uploads/2016/06/23105401/Capture2.png"/>
+</p>  
 
 This is the equation of **Bayes Theorem**.  
 
