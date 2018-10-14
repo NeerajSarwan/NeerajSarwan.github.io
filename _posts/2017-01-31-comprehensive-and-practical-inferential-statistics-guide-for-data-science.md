@@ -436,7 +436,7 @@ Practical applications of ANOVA in modeling are:
 
 Suppose there are 3 chocolates in town and their sweetness is quantified by some metric (S). Data is collected on the three chocolates. You are given the task to identify whether the mean sweetness of the 3 chocolates are different. The data is given as below:
 
-                                                               Type A                    Type B                   Type C
+                                                                Type A                    Type B                   Type C
 
 <p align="center">
   <img src="https://s3-ap-south-1.amazonaws.com/av-blog-media/wp-content/uploads/2017/01/20071549/Screenshot-from-2017-01-20-04-43-12.png"/>
@@ -518,10 +518,10 @@ The summation is taken over all the levels of a categorical variable.
 Expected value of a level (i) is equal to the product of sample size and percentage of it in the population.
 
 Let us now calculate the Expected values of all the levels.  
-E (dairy milk)= 100 \* 30% = 30  
-E (temptation) = 100 \* 60% =60  
-E (kitkat) = 100 \* 10% = 10  
-Calculating chi-square = \[(50-30)^2/30+(45-60)^2/60+(5-10)^2/10\] =19.58  
+**E (dairy milk)** = 100 \* 30% = 30  
+**E (temptation)** = 100 \* 60% =60  
+**E (kitkat)** = 100 \* 10% = 10  
+Calculating **chi-square** = \[(50-30)^2/30+(45-60)^2/60+(5-10)^2/10\] =19.58  
 
 Now, checking for p (chi-square >19.58) using [chi-square calculator](http://stattrek.com/online-calculator/chi-square.aspx), we get p=0.0001. This is significantly lower than the alpha(0.05).
 
@@ -567,7 +567,9 @@ where,
 **f(x)** = predicted value  
 
 **Interpretation of Residual Sum of Squares -** It can be interpreted as the amount by which the predicted values deviated from the actual values. Large deviation would indicate that the model failed at predicting the correct values for the dependent variable. Let us now  work out F-ratio step by step. We will be making using of the Hypothesis Testing framework described above to test the significance of the model. While calculating the F-Ratio care has to be taken to incorporate the effect of degree of freedom.  
+
 Mathematically, F-Ratio is the ratio of **\[Regression Sum of Squares/df(regression)\] and \[Residual Sum of Squares/df(residual)\].**  
+
 We will be understanding the entire concept using an example and [this excel sheet](https://drive.google.com/file/d/0ByAvlBzuj2TgV0RDM0FORkQ3YW8/view).
 
 #### Step 0: State the Null and Alternate Hypothesis
