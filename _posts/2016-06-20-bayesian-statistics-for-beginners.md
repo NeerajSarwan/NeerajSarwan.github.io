@@ -264,13 +264,33 @@ _It is the probability of observing a particular number of heads in a particular
 
 It is worth noticing that representing 1 as heads and 0 as tails is just a mathematical notation to formulate a model. We can combine the above mathematical definitions into a single definition to represent the probability of both the outcomes.
 
-P(y|θ)= ![](https://latex.codecogs.com/gif.latex?%5Ctheta%20%5Ey.%281-%5Ctheta%20%29%5E%7B1-y%7D)
+<p align="center">
+  P(y|θ)=<img src="https://latex.codecogs.com/gif.latex?%5Ctheta%20%5Ey.%281-%5Ctheta%20%29%5E%7B1-y%7D"/>
+</p>  
 
 This is called the **Bernoulli Likelihood Function** and the task of coin flipping is called Bernoulli's trials.
 
-`y={0,1},θ=(0,1)`
+<p align="center">
+  `y={0,1},θ=(0,1)`
+</p>  
 
-And, when we want to see a series of heads or flips, its probability is given by: ![](https://latex.codecogs.com/gif.latex?P%28y_%7B1%7D%2Cy_%7B2%7D%2C...y_%7Bn%7D%7C%5Ctheta%20%29%3D%5Cprod_%7B1%7D%5E%7Bn%7DP%28y_%7Bi%7D%7C%5Ctheta%20%29) ![](https://latex.codecogs.com/gif.latex?P%28y_%7B1%7D%2Cy_%7B2%7D%2C...%2Cy_%7Bn%7D%7C%5Ctheta%20%29%3D%5Cprod_%7B1%7D%5E%7Bn%7D%5Ctheta%20%5E%7By_%7Bi%7D%7D.%281-%5Ctheta%20%29%5E%7B1-y_%7Bi%7D%7D) Furthermore, if we are interested in the probability of number of heads _z_ turning up in _N_ number of flips then the probability is given by: ![](https://latex.codecogs.com/gif.latex?P%28z%2CN%7C%5Ctheta%20%29%3D%5Ctheta%20%5E%7Bz%7D.%281-%5Ctheta%29%5E%7BN-z%7D)  
+And, when we want to see a series of heads or flips, its probability is given by:  
+
+<p align="center">
+  <img src="https://latex.codecogs.com/gif.latex?P%28y_%7B1%7D%2Cy_%7B2%7D%2C...y_%7Bn%7D%7C%5Ctheta%20%29%3D%5Cprod_%7B1%7D%5E%7Bn%7DP%28y_%7Bi%7D%7C%5Ctheta%20%29"/>
+</p>  
+
+<p align="center">
+  <img src="https://latex.codecogs.com/gif.latex?P%28y_%7B1%7D%2Cy_%7B2%7D%2C...%2Cy_%7Bn%7D%7C%5Ctheta%20%29%3D%5Cprod_%7B1%7D%5E%7Bn%7D%5Ctheta%20%5E%7By_%7Bi%7D%7D.%281-%5Ctheta%20%29%5E%7B1-y_%7Bi%7D%7D"/>
+</p>  
+
+
+Furthermore, if we are interested in the probability of number of heads _z_ turning up in _N_ number of flips then the probability is given by:  
+
+<p align="center">
+  <img src="https://latex.codecogs.com/gif.latex?P%28z%2CN%7C%5Ctheta%20%29%3D%5Ctheta%20%5E%7Bz%7D.%281-%5Ctheta%29%5E%7BN-z%7D"/>
+</p>  
+
 
 ### 4.2. Prior Belief  Distribution
 
