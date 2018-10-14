@@ -441,6 +441,7 @@ Bayesian statistics adjusted credibility (probability) of various values of θ.
 Bayes factor does not depend upon the actual distribution values of θ but the magnitude of shift in values of M1 and M2.
 
 In panel A (shown above): left bar (M1) is the prior probability of the null hypothesis. In panel B (shown), the left bar is the posterior probability of the null hypothesis. Bayes factor is defined as the ratio of the posterior odds to the prior odds,  
+ 
 
 <p align="center">
   <img src="https://latex.codecogs.com/gif.latex?BF%3D%20%5Cfrac%7BP%28M%3Dnull%7Cz%2CN%29%7D%7BP%28M%3Dalt%7Cz%2CN%29%7D/%5Cfrac%7BP%28M%3Dnull%29%7D%7BP%28M%3Dalt%29%7D"/>
