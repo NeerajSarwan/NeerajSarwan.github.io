@@ -96,6 +96,7 @@ These three reasons are enough to get you going into thinking about the drawback
 
 
 <br>
+
 3\. Bayesian Statistics
 -----------------------
 
