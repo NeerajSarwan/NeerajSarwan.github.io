@@ -489,6 +489,8 @@ So we reject the Null Hypothesis.  
 
 If you have studied some basic Machine Learning Algorithms, the first algorithm that you must have studied is Regression. If we  recall those lessons of Regression, what we generally do is calculate the weights for features present in the model to better predict the output variable. But finding the right set of feature weights or features for that matter is not always possible. It is highly likely that that the existing features in the model are not fit for explaining the trend in dependent variable or the feature weights calculated fail at explaining the trend in dependent variable. What is important is knowing the degree to which our model is successful in explaining the trend (variance) in dependent variable. Enter ANOVA. With the help of ANOVA techniques, we can analyse a model performance very much like we analyse samples for being statistically different or not. But with regression things are not easy. We do not have mean of any kind to compare  or sample as such but we can find good alternatives in our regression model which can substitute for mean and sample. Sample in case of regression is a regression model itself with pre-defined features and feature weights whereas mean is replaced by variance(of both dependent and independent variables). Through our ANOVA test we would like to know the amount of variance explained by the Independent variables in Dependent Variable VS the amount of variance that was left unexplained. It is intuitive to see that larger the unexplained variance(trend) of the dependent variable smaller will be the ratio and less effective is our regression model. On the other hand, if we have a large explained variance then it is easy to see that our regression model was successful in explaining the variance in the dependent variable and more effective is our model. The ratio of Explained Variance uand Unexplained Variance is called F-Ratio. Let us now define these explained and unexplained variances to find the effectiveness of our model.
 
+<br>
+
 **1\. Regression (Explained) Sum of Squares** - It is defined as the amount of variation explained by the Regression model in the dependent variable.
 
 Mathematically, it is calculated as:  
@@ -502,6 +504,8 @@ where,
 **y(bar)** = mean of the actual y values.  
 
 **Interpreting Regression sum of squares -** If our model is a good model for the problem at hand then it would produce an output which has distribution as same to the actual dependent variable. i.e it would be able to capture the inherent variation in the dependent variable.
+
+<br>
 
 **2\. Residual Sum of Squares** - It is defined as the amount of variation independent variable which is not explained by the Regression model.
 
