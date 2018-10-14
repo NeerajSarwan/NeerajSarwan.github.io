@@ -175,7 +175,7 @@ Probably, you guessed it right. It looks like **Bayes Theorem**. Bayes  theorem
 
 <br> 
 
-### 3.2 Bayes Theorem
+### 3.2 - Bayes Theorem
 
 Bayes Theorem comes into effect when multiple events ![](https://latex.codecogs.com/gif.latex?%5EA%7Bi%7D) form an exhaustive set with another event B. This could be understood with the help of the below diagram.  
 
@@ -230,7 +230,7 @@ Lets represent it using Bayes Theorem:
 
 `P(θ|D)=(P(D|θ) X P(θ))/P(D)`
 
-Here, `P(θ)`is the _**prior **_i.e the strength of our belief in the fairness of coin before the toss. It is perfectly okay to believe that coin can have any degree of fairness between 0 and 1.
+Here, `P(θ)`is the **_prior_** i.e the strength of our belief in the fairness of coin before the toss. It is perfectly okay to believe that coin can have any degree of fairness between 0 and 1.
 
 `P(D|θ)` is the likelihood of observing our result given our distribution for θ. If we knew that coin was fair, this gives the probability of observing the number of heads in a particular number of flips.
 
@@ -242,7 +242,7 @@ _If we had multiple views of what the fairness of the coin is (but didn't know f
 
 From here, we'll dive deeper into mathematical implications of this concept. Don't worry. Once you understand them, getting to its _mathematics_ is pretty easy.
 
-To define our model correctly , we need two mathematical models before hand. One to represent the _**likelihood function P(D|θ) **_ and the other for representing the distribution of _**prior beliefs . **_The product of these two gives the _**posterior belief P(θ|D)**_ distribution.
+To define our model correctly , we need two mathematical models before hand. One to represent the **_likelihood function P(D|θ)_** and the other for representing the distribution of **_prior beliefs_** . The product of these two gives the **_posterior belief P(θ|D)_** distribution.
 
 Since prior and posterior are both beliefs about the distribution of fairness of coin, intuition tells us that both should have the same mathematical form. Keep this in mind. We will come back to it again.
 
