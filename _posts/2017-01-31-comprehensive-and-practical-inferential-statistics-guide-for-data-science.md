@@ -1,6 +1,6 @@
 ---
 layout: post
-published: false
+published: true
 title: Comprehensive and Practical Inferential Statistics guide for Data Science
 subtitle:
 tags:
