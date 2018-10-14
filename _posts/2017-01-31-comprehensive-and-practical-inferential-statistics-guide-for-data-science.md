@@ -231,7 +231,9 @@ The below image will summarize the types of error : ![](http://www.personal.ceu.
 
 T-tests are very much similar to the z-scores, the only difference being that instead of the Population Standard Deviation, we now use the Sample Standard Deviation. The rest is same as before, calculating probabilities on basis of t-values.
 
-The Sample Standard Deviation is given as: ![](https://s3-ap-south-1.amazonaws.com/av-blog-media/wp-content/uploads/2017/01/30121520/eq_2.png)  
+The Sample Standard Deviation is given as:  
+
+![](https://s3-ap-south-1.amazonaws.com/av-blog-media/wp-content/uploads/2017/01/30121520/eq_2.png)  
 
 where n-1 is the Bessel's correction for estimating the population parameter.
 
