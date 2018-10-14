@@ -165,7 +165,7 @@ This is known as **Conditional Probability**. Let's try to answer a betting pr
 
 1.  P(A) =1/2, since it rained twice out of four days.
 2.  P(B) is 1/4, since James won only one race out of four.
-3.  P(A|B)=1, since it rained every time when James won.
+3.  P(A\|\B)=1, since it rained every time when James won.
 
 Substituting the values in the conditional probability formula, we get the probability to be around 50%, which is almost the double of 25% when rain was not taken into account (Solve it at your end).
 
