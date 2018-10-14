@@ -536,7 +536,9 @@ If you have studied some basic Machine Learning Algorithms, the first algorithm 
 
 Mathematically, it is calculated as:  
 
-![{\text{ESS}}=\sum _{{i=1}}^{n}\left({\hat {y}}_{i}-{\bar {y}}\right)^{2}.](https://wikimedia.org/api/rest_v1/media/math/render/svg/97d89b80ceaa5808302275e61e55496360de0942)  
+<p align="center">
+  <img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/97d89b80ceaa5808302275e61e55496360de0942"/>
+</p>  
 
 where,  
 
@@ -552,7 +554,9 @@ where,
 
 Mathematically, it is calculated as:  
 
-![{\displaystyle RSS=\sum _{i=1}^{n}(y_{i}-f(x_{i}))^{2}}](https://wikimedia.org/api/rest_v1/media/math/render/svg/2f6526aa487b4dc460792bf1eeee79b2bba77709)  
+<p align="center">
+  <img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/2f6526aa487b4dc460792bf1eeee79b2bba77709"/>
+</p>   
 
 where,  
 
