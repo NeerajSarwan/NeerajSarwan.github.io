@@ -560,7 +560,8 @@ It is defined as the ratio of the amount of variance explained by the regression
 
 We already calculated the Regression SS and Residual SS. Total SS is the sum of Regression SS and Residual SS.
 
-Total SS = 2.1103632473+ 0.672210946 = 2.78257419 Co-efficient of Determination = 2.1103632473/2.78257419 = 0.7588  
+Total SS = 2.1103632473+ 0.672210946 = 2.78257419  
+Co-efficient of Determination = 2.1103632473/2.78257419 = 0.7588  
 
 12\. Correlation Coefficient
 ----------------------------
