@@ -344,15 +344,27 @@ If mean and standard deviation of a distribution are known , then there shape pa
 
 The reason that we chose prior belief is to obtain a beta distribution. This is because when we multiply it with a likelihood function, posterior distribution yields a form similar to the prior distribution which is much easier to relate to and understand. If this much information whets your appetite, I'm sure you are ready to walk an extra mile.
 
-Let's calculate posterior belief using bayes theorem. **Calculating posterior belief using Bayes Theorem**  
-![](https://latex.codecogs.com/gif.latex?P%28%5Ctheta%20%7Cz%2CN%29%3DP%28z%2CN%7C%5Ctheta%29P%28%5Ctheta%29/P%28z%2CN%29)  
-![](https://latex.codecogs.com/gif.latex?%3D%5Ctheta%5E%7Bz%7D%281-%5Ctheta%29%5E%7BN-z%7D.%5Ctheta%5E%7B%5Calpha-1%7D%281-%5Ctheta%29%5E%7B%5Cbeta-1%7D/%5BB%28%5Calpha%2C%5Cbeta%29P%28z%2CN%29%5D)  
+Let's calculate posterior belief using bayes theorem.  
 
-![](https://latex.codecogs.com/gif.latex?%3D%5Ctheta%5E%7Bz&plus;%5Calpha-1%7D%281-%5Ctheta%29%5E%7BN-z&plus;%5Cbeta-1%7D/%5BB%28z&plus;%5Calpha%2CN-z&plus;%5Cbeta%29%5D)  
+**Calculating posterior belief using Bayes Theorem**  
 
-Now, our posterior belief becomes,  
+<p align="center">
+  <img src="https://latex.codecogs.com/gif.latex?P%28%5Ctheta%20%7Cz%2CN%29%3DP%28z%2CN%7C%5Ctheta%29P%28%5Ctheta%29/P%28z%2CN%29"/>
+</p>  
 
-![](https://latex.codecogs.com/gif.latex?P%28%5Ctheta%7Cz&plus;%5Calpha%2CN-z&plus;%5Cbeta%29)  
+<p align="center">
+  <img src="https://latex.codecogs.com/gif.latex?%3D%5Ctheta%5E%7Bz%7D%281-%5Ctheta%29%5E%7BN-z%7D.%5Ctheta%5E%7B%5Calpha-1%7D%281-%5Ctheta%29%5E%7B%5Cbeta-1%7D/%5BB%28%5Calpha%2C%5Cbeta%29P%28z%2CN%29%5D"/>
+</p>  
+
+<p align="center">
+  <img src="https://latex.codecogs.com/gif.latex?%3D%5Ctheta%5E%7Bz&plus;%5Calpha-1%7D%281-%5Ctheta%29%5E%7BN-z&plus;%5Cbeta-1%7D/%5BB%28z&plus;%5Calpha%2CN-z&plus;%5Cbeta%29%5D"/>
+</p>  
+
+Now, our posterior belief becomes,    
+
+<p align="center">
+  <img src="https://latex.codecogs.com/gif.latex?P%28%5Ctheta%7Cz&plus;%5Calpha%2CN-z&plus;%5Cbeta%29"/>
+</p>  
 
 This is interesting. Just knowing the mean and standard distribution of our belief about the parameter `θ` and by observing the number of heads in N flips, we can update our belief about the model parameter(`θ`).
 
