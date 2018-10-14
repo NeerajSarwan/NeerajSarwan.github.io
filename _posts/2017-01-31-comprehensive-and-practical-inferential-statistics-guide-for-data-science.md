@@ -199,7 +199,9 @@ We know, z-value for 95% C.I is 1.96. Hence, Confidence Interval (C.I) is calcul
 
 C.I= \[{x(bar) - (z\*s/√n)},{x(bar) - (z\*s/√n)}\]  
 C.I = \[{40-(1.96\*40/10},{ 40+(1.96\*40/10)}\]  
-C.I = \[32.16, 47.84\]  
+C.I = \[32.16, 47.84\]  
+
+<br>
 
 4\. Hypothesis Testing
 ----------------------
@@ -456,13 +458,13 @@ Now we will proceed step-wise to calculate the F-Ratio (ANOVA statistic).
 
 #### Step 2: Calculating the appropriate ANOVA statistic
 
-In this part, we will be calculating SS(B), SS(W), SS(T) and then move on to calculate MS(B) and MS(W). The thing to note is that,
+In this part, we will be calculating **SS(B)**, **SS(W)**, **SS(T)** and then move on to calculate **MS(B)** and **MS(W)**. The thing to note is that,
 
-Total Sum of Squares \[SS(t)\] = Between Sum of Squares \[SS(B)\] + Within Sum of Squares \[SS(W)\].
+Total Sum of Squares **\[SS(t)\]** = Between Sum of Squares **\[SS(B)\]** + Within Sum of Squares **\[SS(W)\]**.
 
 So, we need to calculate any two of the three parameters using the data table and formulas given above.
 
-As, per the formula above, we need one more statistic i.e Grand Mean denoted by X(bar) in the formula above.  
+As, per the formula above, we need one more statistic i.e Grand Mean denoted by **X(bar)** in the formula above.  
 
 <br>
 
