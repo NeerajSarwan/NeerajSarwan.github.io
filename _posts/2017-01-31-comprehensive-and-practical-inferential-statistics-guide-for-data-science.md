@@ -413,7 +413,8 @@ Within groups : If N represents the total observations in ANOVA (∑n over all g
 
  
 
-### 8.1 - Steps to perform ANOVA
+### 8.1 - Steps to perform ANOVA  
+
 
 1.  Hypothesis Generation
     1.  Null Hypothesis : Means of all the groups are same
@@ -436,7 +437,7 @@ Practical applications of ANOVA in modeling are:
 
 Suppose there are 3 chocolates in town and their sweetness is quantified by some metric (S). Data is collected on the three chocolates. You are given the task to identify whether the mean sweetness of the 3 chocolates are different. The data is given as below:
 
-                                                                   Type A                    Type B                   Type C
+                                                                 Type A                    Type B                   Type C
 
 <p align="center">
   <img src="https://s3-ap-south-1.amazonaws.com/av-blog-media/wp-content/uploads/2017/01/20071549/Screenshot-from-2017-01-20-04-43-12.png"/>
@@ -568,7 +569,7 @@ Mathematically, it is calculated as:
 
 where,  
 
-![](https://s3-ap-south-1.amazonaws.com/av-blog-media/wp-content/uploads/2017/01/30063257/Image_8.png) = actual 'y ' value  
+**![](https://s3-ap-south-1.amazonaws.com/av-blog-media/wp-content/uploads/2017/01/30063257/Image_8.png)** = actual 'y ' value  
 
 **f(x)** = predicted value  
 
