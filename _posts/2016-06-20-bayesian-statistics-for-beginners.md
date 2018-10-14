@@ -95,7 +95,7 @@ For example: Person A may choose to stop tossing a coin when the total count rea
 These three reasons are enough to get you going into thinking about the drawbacks of the _frequentist approach_ and why is there a need for _bayesian approach_. Let's find it out. From here, we'll first understand the basics of Bayesian Statistics.  
 
 
-
+<br>
 3\. Bayesian Statistics
 -----------------------
 
@@ -135,19 +135,30 @@ Set A represents one set of events and Set B represents another. We wish to calc
 
 Now since B has happened, the part which now matters for A is the part shaded in blue which is interestingly ![CodeCogsEqn](https://www.analyticsvidhya.com/wp-content/uploads/2016/06/CodeCogsEqn-1.gif). So, the probability of A given B turns out to be:  
 
-![](https://latex.codecogs.com/gif.latex?%5Cfrac%7BBlue%20Area%7D%7BRed%20Area+Blue%20Area%7D)  
+<p align="center">
+  <img src="https://latex.codecogs.com/gif.latex?%5Cfrac%7BBlue%20Area%7D%7BRed%20Area+Blue%20Area%7D"/>
+</p>
 
 
 Therefore, we can write the formula for event B given A has already occurred by:  
 
-![](https://latex.codecogs.com/gif.latex?P%28B%7CA%29%3D%5Cfrac%7BP%28A%5Ccap%20B%29%7D%7BP%28A%29%7D)  
+<p align="center">
+  <img src="https://latex.codecogs.com/gif.latex?P%28B%7CA%29%3D%5Cfrac%7BP%28A%5Ccap%20B%29%7D%7BP%28A%29%7D"/>
+</p>  
+
 or  
 
-![](https://latex.codecogs.com/gif.latex?P%28A%7CB%29%3D%5Cfrac%7BP%28A%5Ccap%20B%29%7D%7BP%28B%29%7D)  
+<p align="center">
+  <img src="https://latex.codecogs.com/gif.latex?P%28A%7CB%29%3D%5Cfrac%7BP%28A%5Ccap%20B%29%7D%7BP%28B%29%7D"/>
+</p>  
+
 
 Now, the second equation can be rewritten as :  
 
-![](https://latex.codecogs.com/gif.latex?P%28A%7CB%29%3D%5Cfrac%7BP%28B%7CA%29XP%28A%29%7D%7BP%28B%29%7D)  
+<p align="center">
+  <img src="https://latex.codecogs.com/gif.latex?P%28A%7CB%29%3D%5Cfrac%7BP%28B%7CA%29XP%28A%29%7D%7BP%28B%29%7D"/>
+</p>  
+
 
 This is known as **Conditional Probability**. Let's try to answer a betting problem with this technique. Suppose, B be the _event of winning of James Hunt_. A be the _event of raining_. Therefore,
 
