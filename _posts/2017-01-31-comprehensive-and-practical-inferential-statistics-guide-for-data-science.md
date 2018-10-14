@@ -97,7 +97,9 @@ Suppose, you note down the salary of any 100 random Data Science professionals i
 
 When you plot a frequency graph of these 200 means, you are likely to get a curve similar to the one below.
 
-![](https://s3-ap-south-1.amazonaws.com/av-blog-media/wp-content/uploads/2017/01/30111011/sampling_dist.png)
+<p align="center">
+  <img src="https://s3-ap-south-1.amazonaws.com/av-blog-media/wp-content/uploads/2017/01/30111011/sampling_dist.png"/>
+</p>  
 
 This looks very much similar to the normal curve that you studied in the Descriptive Statistics. This is called Sampling Distribution or the graph obtained by plotting sample means. Let us look at a more formal description of a Sampling Distribution.
 
@@ -105,7 +107,9 @@ A Sampling Distribution is a probability distribution of a statistic obtained th
 
 *   The shape of the Sampling Distribution does not reveal anything about the shape of the population. For example, for the above Sampling Distribution, the population distribution may look like the below graph.
 
-![](https://s3-ap-south-1.amazonaws.com/av-blog-media/wp-content/uploads/2017/01/30112618/sample_7.png)  
+<p align="center">
+  <img src="https://s3-ap-south-1.amazonaws.com/av-blog-media/wp-content/uploads/2017/01/30112618/sample_7.png"/>
+</p>  
 
 Population Distribution
 
@@ -129,7 +133,9 @@ This seemed too technical isn't it? Let's break this down to understand this poi
 2.  The number of samples have to be sufficient (generally more than 50) to satisfactorily achieve a normal curve distribution. Also, care has to be taken to keep the sample size fixed since any change in sample size will change the shape of the sampling distribution and it will no longer be bell shaped.
 3.  As we increase the sample size, the sampling distribution squeezes from both sides giving us a better estimate of the population statistic since it lies somewhere in the middle of the sampling distribution (generally). The below image will help you visualize the effect of sample size on the shape of distribution.
 
-![](https://s3-ap-south-1.amazonaws.com/av-blog-media/wp-content/uploads/2017/01/30112628/sample_8.png)
+<p align="center">
+  <img src="https://s3-ap-south-1.amazonaws.com/av-blog-media/wp-content/uploads/2017/01/30112628/sample_8.png"/>
+</p>  
 
 Now, since we have collected the samples and plotted their means, it is important to know where the population mean lies with respect to a particular sample mean and how confident can we be about it. This brings us to our next topic - **Confidence Interval.**
 
@@ -139,13 +145,17 @@ Now, since we have collected the samples and plotted their means, it is importan
 
 The confidence interval is a type of interval estimate from the sampling distribution which gives a range of values in which the population statistic may lie. Let us understand this with the help of an example.
 
-![](https://s3-ap-south-1.amazonaws.com/av-blog-media/wp-content/uploads/2017/01/30111058/sampling_3.png)
+<p align="center">
+  <img src="https://s3-ap-south-1.amazonaws.com/av-blog-media/wp-content/uploads/2017/01/30111058/sampling_3.png"/>
+</p>  
 
 We know that 95% of the values lie within 2 (1.96 to be more accurate) standard deviation of a normal distribution curve. So, for the above curve, the blue shaded portion represents the confidence interval for a sample mean of 0.
 
 Formally, Confidence Interval is defined as,  
 
-![](https://s3-ap-south-1.amazonaws.com/av-blog-media/wp-content/uploads/2017/01/30111025/image_11.png)  
+<p align="center">
+  <img src="https://s3-ap-south-1.amazonaws.com/av-blog-media/wp-content/uploads/2017/01/30111025/image_11.png"/>
+</p>  
 
 whereas,  
 
@@ -162,7 +172,9 @@ And it is easy to infer that the error can be both positive and negative side. T
 
 The below image will help you better visualize Margin of Error and Confidence Interval.
 
-![](https://s3-ap-south-1.amazonaws.com/av-blog-media/wp-content/uploads/2017/01/30112037/sampling_4.png)
+<p align="center">
+  <img src="https://s3-ap-south-1.amazonaws.com/av-blog-media/wp-content/uploads/2017/01/30112037/sampling_4.png"/>
+</p>  
 
 The shaded portion on horizontal axis represents the Confidence Interval and half of it is Margin of Error which can be in either direction of x (bar).
 
@@ -224,7 +236,11 @@ There are two types of errors that are generally encountered while conducting Hy
 *   **Type I error**: Look at the following scenario - A male human tested positive for being pregnant. Is it even possible? This surely looks like a case of False Positive. More formally, it is defined as the incorrect rejection of a True Null Hypothesis. The Null Hypothesis, in this case, would be - Male Human is not pregnant.
 *   **Type II error**: Look at another scenario where our Null Hypothesis is - A male human is pregnant and the test supports the Null Hypothesis.  This looks like a case of False Negative. More formally it is defined as the acceptance of a false Null Hypothesis.
 
-The below image will summarize the types of error : ![](http://www.personal.ceu.hu/students/08/Olga_Etchevskaia/images/errors.jpg)  
+The below image will summarize the types of error :  
+
+<p align="center">
+  <img src="http://www.personal.ceu.hu/students/08/Olga_Etchevskaia/images/errors.jpg"/>
+</p>  
 
 6\. T-tests
 -----------
@@ -233,7 +249,9 @@ T-tests are very much similar to the z-scores, the only difference being that in
 
 The Sample Standard Deviation is given as:  
 
-![](https://s3-ap-south-1.amazonaws.com/av-blog-media/wp-content/uploads/2017/01/30121520/eq_2.png)  
+<p align="center">
+  <img src="https://s3-ap-south-1.amazonaws.com/av-blog-media/wp-content/uploads/2017/01/30121520/eq_2.png"/>
+</p>  
 
 where n-1 is the Bessel's correction for estimating the population parameter.
 
@@ -260,7 +278,9 @@ This is the same test as we described above. This test is used to:
 
 For eg: A pizza delivery manager may perform a 1-sample t-test whether their delivery time is significantly different from that of the advertised time of 30 minutes by their competitors.
 
-![](https://s3-ap-south-1.amazonaws.com/av-blog-media/wp-content/uploads/2017/01/30122221/eq_3.png)
+<p align="center">
+  <img src="https://s3-ap-south-1.amazonaws.com/av-blog-media/wp-content/uploads/2017/01/30122221/eq_3.png"/>
+</p>  
 
 where,  
 **X(bar)** = sample mean  
@@ -273,13 +293,16 @@ where,
 
 Paired t-test is performed to check whether there is a difference in mean after a treatment on a sample in comparison to before. It checks whether the Null hypothesis: The difference between the means is Zero, can be rejected or not.
 
-![](https://s3-ap-south-1.amazonaws.com/av-blog-media/wp-content/uploads/2017/01/30230329/Screenshot-13.png)
+<p align="center">
+  <img src="https://s3-ap-south-1.amazonaws.com/av-blog-media/wp-content/uploads/2017/01/30230329/Screenshot-13.png"/>
+</p>  
 
- 
 
 The above example suggests that the Null Hypothesis should not be rejected and that there is no significant difference in means before and after the intervention since p-value is not less than the alpha value (o.o5) and t stat is not less than t-critical. The excel sheet for the above exercise is available [here](https://drive.google.com/open?id=0ByAvlBzuj2TgQ0M0U2lVZnZuams).
 
-![](https://s3-ap-south-1.amazonaws.com/av-blog-media/wp-content/uploads/2017/01/30122821/eq_4.png)
+<p align="center">
+  <img src="https://s3-ap-south-1.amazonaws.com/av-blog-media/wp-content/uploads/2017/01/30122821/eq_4.png"/>
+</p>  
 
 where, **d (bar)** = mean of the case wise difference between before and after,
 
@@ -296,7 +319,9 @@ This test is used to determine:
 *   Determine whether the means of two independent groups differ.
 *   Calculate a range of values that is likely to include the difference between the population means.
 
-![](https://s3-ap-south-1.amazonaws.com/av-blog-media/wp-content/uploads/2017/01/30123537/eq_41.png)
+<p align="center">
+  <img src="https://s3-ap-south-1.amazonaws.com/av-blog-media/wp-content/uploads/2017/01/30123537/eq_41.png"/>
+</p>  
 
 The above formula represents the 2 sample t-test and can be used in situations like to check whether two machines are producing the same output. The points to be noted for this test are:
 
@@ -356,13 +381,21 @@ Mean Square (between groups) = Sum of Squares (between groups) / degree of freed
 
 Mean Square (within group) = Sum of Squares (within group) / degree of freedom (within group)  
 
-![](https://s3-ap-south-1.amazonaws.com/av-blog-media/wp-content/uploads/2017/01/20071114/Screenshot-from-2017-01-20-04-38-39.png)  
+<p align="center">
+  <img src="https://s3-ap-south-1.amazonaws.com/av-blog-media/wp-content/uploads/2017/01/20071114/Screenshot-from-2017-01-20-04-38-39.png"/>
+</p>  
 
-![](https://s3-ap-south-1.amazonaws.com/av-blog-media/wp-content/uploads/2017/01/30124859/eq_5-300x107.png)  
+<p align="center">
+  <img src="https://s3-ap-south-1.amazonaws.com/av-blog-media/wp-content/uploads/2017/01/30124859/eq_5-300x107.png"/>
+</p>  
 
-![](https://s3-ap-south-1.amazonaws.com/av-blog-media/wp-content/uploads/2017/01/30124918/eq_6-300x118.png)  
+<p align="center">
+  <img src="https://s3-ap-south-1.amazonaws.com/av-blog-media/wp-content/uploads/2017/01/30124918/eq_6-300x118.png"/>
+</p>  
 
-![](https://s3-ap-south-1.amazonaws.com/av-blog-media/wp-content/uploads/2017/01/30125021/eq_7-300x145.png)  
+<p align="center">
+  <img src="https://s3-ap-south-1.amazonaws.com/av-blog-media/wp-content/uploads/2017/01/30125021/eq_7-300x145.png"/>
+</p>  
 
 Here, **p** = represents the number of groups
 
@@ -403,7 +436,9 @@ Suppose there are 3 chocolates in town and their sweetness is quantified by some
 
                                                                  Type A                    Type B                   Type C
 
-![](https://s3-ap-south-1.amazonaws.com/av-blog-media/wp-content/uploads/2017/01/20071549/Screenshot-from-2017-01-20-04-43-12.png)
+<p align="center">
+  <img src="https://s3-ap-south-1.amazonaws.com/av-blog-media/wp-content/uploads/2017/01/20071549/Screenshot-from-2017-01-20-04-43-12.png"/>
+</p>  
 
 Here, first we have calculated the sample mean and sample standard deviation for you.
 
@@ -464,7 +499,9 @@ Let us understand this with help of an example. Suppose a company that manufactu
 
 Let us state our Hypothesis first. Null Hypothesis: The claims are True Alternate Hypothesis: The claims are False. Chi-Square Test is given by:  
 
-![](http://www.statisticshowto.com/wp-content/uploads/2013/09/chi-square-formula.jpg)  
+<p align="center">
+  <img src="http://www.statisticshowto.com/wp-content/uploads/2013/09/chi-square-formula.jpg"/>
+</p>  
 
 where,  
 
@@ -478,7 +515,11 @@ The summation is taken over all the levels of a categorical variable.
 
 Expected value of a level (i) is equal to the product of sample size and percentage of it in the population.
 
-Let us now calculate the Expected values of all the levels. E (dairy milk)= 100 \* 30% = 30 E (temptation) = 100 \* 60% =60 E (kitkat) = 100 \* 10% = 10 Calculating chi-square = \[(50-30)^2/30+(45-60)^2/60+(5-10)^2/10\] =19.58  
+Let us now calculate the Expected values of all the levels.  
+E (dairy milk)= 100 \* 30% = 30  
+E (temptation) = 100 \* 60% =60  
+E (kitkat) = 100 \* 10% = 10  
+Calculating chi-square = \[(50-30)^2/30+(45-60)^2/60+(5-10)^2/10\] =19.58  
 
 Now, checking for p (chi-square >19.58) using [chi-square calculator](http://stattrek.com/online-calculator/chi-square.aspx), we get p=0.0001. This is significantly lower than the alpha(0.05).
 
@@ -560,13 +601,13 @@ It is defined as the ratio of the amount of variance explained by the regression
 
 We already calculated the Regression SS and Residual SS. Total SS is the sum of Regression SS and Residual SS.
 
-Total SS = 2.1103632473+ 0.672210946 = 2.78257419  
-Co-efficient of Determination = 2.1103632473/2.78257419 = 0.7588  
+**Total SS** = 2.1103632473+ 0.672210946 = 2.78257419  
+**Co-efficient of Determination** = 2.1103632473/2.78257419 = 0.7588  
 
 12\. Correlation Coefficient
 ----------------------------
 
-This is another useful statistic which is used to determine the correlation between two variables. It is simply the square root of coefficient of Determination and ranges from -1 to 1 where 0 represents no correlation and 1 represents positive strong correlation while -1 represents negative strong correlation.
+This is another useful statistic which is used to determine the correlation between two variables. It is simply the square root of coefficient of Determination and ranges from -1 to 1, where 0 represents no correlation and 1 represents positive strong correlation while -1 represents negative strong correlation.
 
  
 
