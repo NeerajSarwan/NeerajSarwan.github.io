@@ -171,11 +171,33 @@ Substituting the values in the conditional probability formula, we get the proba
 
 This further strengthened our belief  of James winning in the light of new _evidence_ i.e rain. You must be wondering that this formula bears close resemblance to something you might have heard a lot about. Think!
 
-Probably, you guessed it right. It looks like **Bayes Theorem**. Bayes  theorem is built on top of conditional probability and lies in the heart of Bayesian Inference. Let's understand it in detail now.  
+Probably, you guessed it right. It looks like **Bayes Theorem**. Bayes  theorem is built on top of conditional probability and lies in the heart of Bayesian Inference. Let's understand it in detail now.  
+
+<br> 
 
 ### 3.2 Bayes Theorem
 
-Bayes Theorem comes into effect when multiple events ![](https://latex.codecogs.com/gif.latex?%5EA%7Bi%7D) form an exhaustive set with another event B. This could be understood with the help of the below diagram. ![Capture](https://www.analyticsvidhya.com/wp-content/uploads/2016/06/Capture.png)   Now, B can be written as ![](https://latex.codecogs.com/gif.latex?B%3D%5Csum_%7Bi%3D1%7D%5E%7Bn%7D%20B%5Ccap%20A_%7Bi%7D) So, probability of B can be written as, ![](https://latex.codecogs.com/gif.latex?P%28B%29%3D%5Csum_%7Bi%3D1%7D%5E%7Bn%7D%20P%28B%5Ccap%20A_%7Bi%7D%29) But![](https://s3-ap-south-1.amazonaws.com/av-blog-media/wp-content/uploads/2016/06/23104634/Capture1.png) So, replacing P(B) in the equation of conditional probability we get ![](https://s3-ap-south-1.amazonaws.com/av-blog-media/wp-content/uploads/2016/06/23105401/Capture2.png)   This is the equation of **Bayes Theorem**.  
+Bayes Theorem comes into effect when multiple events ![](https://latex.codecogs.com/gif.latex?%5EA%7Bi%7D) form an exhaustive set with another event B. This could be understood with the help of the below diagram.  
+
+![Capture](https://www.analyticsvidhya.com/wp-content/uploads/2016/06/Capture.png)  
+
+Now, B can be written as  
+
+![](https://latex.codecogs.com/gif.latex?B%3D%5Csum_%7Bi%3D1%7D%5E%7Bn%7D%20B%5Ccap%20A_%7Bi%7D)  
+
+So, probability of B can be written as,  
+
+![](https://latex.codecogs.com/gif.latex?P%28B%29%3D%5Csum_%7Bi%3D1%7D%5E%7Bn%7D%20P%28B%5Ccap%20A_%7Bi%7D%29)  
+
+But![](https://s3-ap-south-1.amazonaws.com/av-blog-media/wp-content/uploads/2016/06/23104634/Capture1.png)  
+
+So, replacing P(B) in the equation of conditional probability we get  
+
+![](https://s3-ap-south-1.amazonaws.com/av-blog-media/wp-content/uploads/2016/06/23105401/Capture2.png)  
+
+This is the equation of **Bayes Theorem**.  
+
+<br> 
 
 4\. Bayesian Inference
 ----------------------
