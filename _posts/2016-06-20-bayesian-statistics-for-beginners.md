@@ -61,13 +61,18 @@ Here, the sampling distributions of **fixed size** are taken. Then, the experi
 
 Let's go deeper now.
 
-Now, we'll understand _frequentist statistics_ using an example of coin toss. The objective is to estimate the fairness of the coin. Below is a table representing the frequency of heads: ![](https://sites.google.com/site/yongyoonsite/_/rsrc/1374277114428/stats101/ch10/fig.10c.png) We know that probability of getting a head on tossing a fair coin is 0.5. `No. of heads` represents the actual number of heads obtained. `Difference` is the difference between `0.5*(No. of tosses) - no. of heads`.
+Now, we'll understand _frequentist statistics_ using an example of coin toss. The objective is to estimate the fairness of the coin. Below is a table representing the frequency of heads:  
+
+![](https://sites.google.com/site/yongyoonsite/_/rsrc/1374277114428/stats101/ch10/fig.10c.png)  
+
+We know that probability of getting a head on tossing a fair coin is 0.5. `No. of heads` represents the actual number of heads obtained. `Difference` is the difference between `0.5*(No. of tosses) - no. of heads`.
 
 An important thing is to note that, though the difference between the actual number of heads and expected number of heads( 50% of number of tosses) increases as the number of tosses are increased, the proportion of number of heads to total number of tosses approaches 0.5 (for a fair coin).
 
 This experiment presents us with a very common flaw found in frequentist approach i.e. _Dependence of the result of an experiment on the number of times the experiment is repeated._
 
-To know more about frequentist statistical methods, you can head to this [excellent course](https://classroom.udacity.com/courses/ud201/lessons/1306898579/concepts/1611758530923) on inferential statistics.  
+To know more about frequentist statistical methods, you can head to this [excellent course](https://classroom.udacity.com/courses/ud201/lessons/1306898579/concepts/1611758530923) on inferential statistics.  
+ 
 
 2\. The Inherent Flaws in Frequentist Statistics
 ------------------------------------------------
