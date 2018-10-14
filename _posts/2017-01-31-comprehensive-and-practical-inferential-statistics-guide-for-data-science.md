@@ -550,7 +550,7 @@ Mathematically, it is calculated as:
 
 where,  
 
-![](https://s3-ap-south-1.amazonaws.com/av-blog-media/wp-content/uploads/2017/01/30063257/Image_8.png)\[hat\] = predicted value  
+**![](https://s3-ap-south-1.amazonaws.com/av-blog-media/wp-content/uploads/2017/01/30063257/Image_8.png)\[hat\]** = predicted value  
 
 **y(bar)** = mean of the actual y values.  
 
