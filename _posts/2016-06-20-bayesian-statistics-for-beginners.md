@@ -256,7 +256,9 @@ Lets recap what we learned about the likelihood function. So, we learned that:
 
 _It is the probability of observing a particular number of heads in a particular number of flips for a given fairness of coin. This means our probability of observing heads/tails depends upon the fairness of coin (θ)._
 
-`P(y=1|θ)= ![](https://latex.codecogs.com/gif.latex?%5Ctheta%20%5Ey)`    \[If coin is fair θ=0.5, probability of observing heads (y=1) is 0.5\] `P(y=0|θ)=![](https://latex.codecogs.com/gif.latex?%281-%5Ctheta%20%29%5E%7B1-y%7D)` \[If coin is fair θ=0.5, probability of observing tails(y=0) is 0.5\]
+P(y=1|θ)= ![](https://latex.codecogs.com/gif.latex?%5Ctheta%20%5Ey)  
+\[If coin is fair θ=0.5, probability of observing heads (y=1) is 0.5\] P(y=0|θ)=![](https://latex.codecogs.com/gif.latex?%281-%5Ctheta%20%29%5E%7B1-y%7D)  
+\[If coin is fair θ=0.5, probability of observing tails(y=0) is 0.5\]
 
 It is worth noticing that representing 1 as heads and 0 as tails is just a mathematical notation to formulate a model. We can combine the above mathematical definitions into a single definition to represent the probability of both the outcomes.
 
