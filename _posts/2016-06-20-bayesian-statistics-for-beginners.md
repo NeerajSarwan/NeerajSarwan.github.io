@@ -76,6 +76,7 @@ This experiment presents us with a very common flaw found in frequentist approac
 To know more about frequentist statistical methods, you can head to this [excellent course](https://classroom.udacity.com/courses/ud201/lessons/1306898579/concepts/1611758530923) on inferential statistics.  
  
 
+
 2\. The Inherent Flaws in Frequentist Statistics
 ------------------------------------------------
 
@@ -91,7 +92,9 @@ For example: Person A may choose to stop tossing a coin when the total count rea
 
 3- Confidence Intervals (C.I) are not probability distributions therefore they do not provide the most probable value for a parameter and the most probable values.
 
-These three reasons are enough to get you going into thinking about the drawbacks of the _frequentist approach_ and why is there a need for _bayesian approach_. Let's find it out. From here, we'll first understand the basics of Bayesian Statistics.  
+These three reasons are enough to get you going into thinking about the drawbacks of the _frequentist approach_ and why is there a need for _bayesian approach_. Let's find it out. From here, we'll first understand the basics of Bayesian Statistics.  
+
+
 
 3\. Bayesian Statistics
 -----------------------
@@ -117,7 +120,7 @@ In addition, there are certain pre-requisites: Pre-Requisites:
 
  
 
-### 3.1 Conditional Probability
+### 3.1 - Conditional Probability
 
 It is defined as the: Probability of an event A given B equals the probability of B and A happening together divided by the probability of B."
 
@@ -125,7 +128,26 @@ For example: Assume two partially intersecting sets A and B as shown below.
 
 Set A represents one set of events and Set B represents another. We wish to calculate the probability of A given B has already happened. Lets represent the happening of event B by shading it with red.
 
-![1](https://www.analyticsvidhya.com/wp-content/uploads/2016/06/1-1.jpg) Now since B has happened, the part which now matters for A is the part shaded in blue which is interestingly ![CodeCogsEqn](https://www.analyticsvidhya.com/wp-content/uploads/2016/06/CodeCogsEqn-1.gif). So, the probability of A given B turns out to be: ![](https://latex.codecogs.com/gif.latex?%5Cfrac%7BBlue%20Area%7D%7BRed%20Area+Blue%20Area%7D) Therefore, we can write the formula for event B given A has already occurred by: ![](https://latex.codecogs.com/gif.latex?P%28B%7CA%29%3D%5Cfrac%7BP%28A%5Ccap%20B%29%7D%7BP%28A%29%7D) or ![](https://latex.codecogs.com/gif.latex?P%28A%7CB%29%3D%5Cfrac%7BP%28A%5Ccap%20B%29%7D%7BP%28B%29%7D) Now, the second equation can be rewritten as : ![](https://latex.codecogs.com/gif.latex?P%28A%7CB%29%3D%5Cfrac%7BP%28B%7CA%29XP%28A%29%7D%7BP%28B%29%7D) This is known as **Conditional Probability**. Let's try to answer a betting problem with this technique. Suppose, B be the _event of winning of James Hunt_. A be the _event of raining_. Therefore,
+![1](https://www.analyticsvidhya.com/wp-content/uploads/2016/06/1-1.jpg)  
+
+
+Now since B has happened, the part which now matters for A is the part shaded in blue which is interestingly ![CodeCogsEqn](https://www.analyticsvidhya.com/wp-content/uploads/2016/06/CodeCogsEqn-1.gif). So, the probability of A given B turns out to be:  
+
+![](https://latex.codecogs.com/gif.latex?%5Cfrac%7BBlue%20Area%7D%7BRed%20Area+Blue%20Area%7D)  
+
+
+Therefore, we can write the formula for event B given A has already occurred by:  
+
+![](https://latex.codecogs.com/gif.latex?P%28B%7CA%29%3D%5Cfrac%7BP%28A%5Ccap%20B%29%7D%7BP%28A%29%7D)  
+or  
+
+![](https://latex.codecogs.com/gif.latex?P%28A%7CB%29%3D%5Cfrac%7BP%28A%5Ccap%20B%29%7D%7BP%28B%29%7D)  
+
+Now, the second equation can be rewritten as :  
+
+![](https://latex.codecogs.com/gif.latex?P%28A%7CB%29%3D%5Cfrac%7BP%28B%7CA%29XP%28A%29%7D%7BP%28B%29%7D)  
+
+This is known as **Conditional Probability**. Let's try to answer a betting problem with this technique. Suppose, B be the _event of winning of James Hunt_. A be the _event of raining_. Therefore,
 
 1.  P(A) =1/2, since it rained twice out of four days.
 2.  P(B) is 1/4, since James won only one race out of four.
