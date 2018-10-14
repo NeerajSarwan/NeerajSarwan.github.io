@@ -130,11 +130,11 @@ For example: Assume two partially intersecting sets A and B as shown below.
 Set A represents one set of events and Set B represents another. We wish to calculate the probability of A given B has already happened. Lets represent the happening of event B by shading it with red.
 
 <p align="center">
-  <img src="https://www.analyticsvidhya.com/wp-content/uploads/2016/06/1-1.jpg"/>
+  <img src="https://neerajsarwan.github.io/files/posts/Bayesian-Statistics-for-Beginners/1-1-300x196.jpg"/>
 </p>
 
 
-Now since B has happened, the part which now matters for A is the part shaded in blue which is interestingly ![CodeCogsEqn](https://www.analyticsvidhya.com/wp-content/uploads/2016/06/CodeCogsEqn-1.gif). So, the probability of A given B turns out to be:  
+Now since B has happened, the part which now matters for A is the part shaded in blue which is interestingly ![CodeCogsEqn](https://neerajsarwan.github.io/files/posts/Bayesian-Statistics-for-Beginners/CodeCogsEqn-1.gif). So, the probability of A given B turns out to be:  
 
 <p align="center">
   <img src="https://latex.codecogs.com/gif.latex?%5Cfrac%7BBlue%20Area%7D%7BRed%20Area+Blue%20Area%7D"/>
@@ -180,7 +180,7 @@ Probably, you guessed it right. It looks like **Bayes Theorem**. Bayes  theorem
 Bayes Theorem comes into effect when multiple events ![](https://latex.codecogs.com/gif.latex?%5EA%7Bi%7D) form an exhaustive set with another event B. This could be understood with the help of the below diagram.  
 
 <p align="center">
-  <img src="https://www.analyticsvidhya.com/wp-content/uploads/2016/06/Capture.png"/>
+  <img src="https://neerajsarwan.github.io/files/posts/Bayesian-Statistics-for-Beginners/Capture.png"/>
 </p>  
 
 Now, B can be written as  
