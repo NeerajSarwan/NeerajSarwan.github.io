@@ -19,7 +19,11 @@ In 1770s, Thomas Bayes introduced 'Bayes Theorem'. Even after centuries later, t
 
 With this idea, I've created this beginner's guide on Bayesian Statistics. I've tried to explain the concepts in a simplistic manner with examples. Prior knowledge of basic probability & statistics is desirable. By the end of this article, you will have a concrete understanding of Bayesian Statistics and its associated concepts.
 
+
+
 ![](https://neerajsarwan.github.io/files/posts/Bayesian-Statistics-for-Beginners/12-768x475.jpg)
+
+
   
 
 Table of Contents
