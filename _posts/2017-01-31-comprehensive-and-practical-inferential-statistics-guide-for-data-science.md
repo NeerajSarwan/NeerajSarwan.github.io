@@ -179,7 +179,13 @@ Many people do not have right knowledge about confidence interval and often inte
 
 ### 3.3 Practical example
 
-Calculate the 95% confidence interval for a sample mean of 40 and sample standard deviation of 40 with sample size equal to 100. **Solution:** We know, z-value for 95% C.I is 1.96. Hence, Confidence Interval (C.I) is calculated as: C.I= \[{x(bar) - (z\*s/√n)},{x(bar) - (z\*s/√n)}\]  
+Calculate the 95% confidence interval for a sample mean of 40 and sample standard deviation of 40 with sample size equal to 100.  
+
+**Solution:**  
+
+We know, z-value for 95% C.I is 1.96. Hence, Confidence Interval (C.I) is calculated as:  
+
+C.I= \[{x(bar) - (z\*s/√n)},{x(bar) - (z\*s/√n)}\]  
 C.I = \[{40-(1.96\*40/10},{ 40+(1.96\*40/10)}\]  
 C.I = \[32.16, 47.84\]  
 
