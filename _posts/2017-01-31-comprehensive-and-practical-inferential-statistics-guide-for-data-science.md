@@ -409,11 +409,15 @@ Here, first we have calculated the sample mean and sample standard deviation for
 
 Now we will proceed step-wise to calculate the F-Ratio (ANOVA statistic).
 
+<br>
+
 #### Step 1: Stating the Null and Alternate Hypothesis
 
 **Null Hypothesis:** Mean sweetness of the three chocolates are same.
 
 **Alternate Hypothesis:** Mean sweetness of at least one of the chocolates is different.
+
+<br>
 
 #### Step 2: Calculating the appropriate ANOVA statistic
 
