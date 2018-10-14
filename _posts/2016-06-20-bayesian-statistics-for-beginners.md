@@ -165,7 +165,7 @@ This is known as **Conditional Probability**. Let's try to answer a betting pr
 
 1.  P(A) =1/2, since it rained twice out of four days.
 2.  P(B) is 1/4, since James won only one race out of four.
-3.  P(A\|\B)=1, since it rained every time when James won.
+3.  P(A\|B)=1, since it rained every time when James won.
 
 Substituting the values in the conditional probability formula, we get the probability to be around 50%, which is almost the double of 25% when rain was not taken into account (Solve it at your end).
 
@@ -242,7 +242,7 @@ _If we had multiple views of what the fairness of the coin is (but didn't know f
 
 From here, we'll dive deeper into mathematical implications of this concept. Don't worry. Once you understand them, getting to its _mathematics_ is pretty easy.
 
-To define our model correctly , we need two mathematical models before hand. One to represent the **_likelihood function P(D|θ)_** and the other for representing the distribution of **_prior beliefs_** . The product of these two gives the **_posterior belief P(θ|D)_** distribution.
+To define our model correctly , we need two mathematical models before hand. One to represent the **_likelihood function P(D\|θ)_** and the other for representing the distribution of **_prior beliefs_** . The product of these two gives the **_posterior belief P(θ\|D)_** distribution.
 
 Since prior and posterior are both beliefs about the distribution of fairness of coin, intuition tells us that both should have the same mathematical form. Keep this in mind. We will come back to it again.
 
@@ -448,7 +448,7 @@ In panel A (shown above): left bar (M1) is the prior probability of the null hyp
 </p>  
 
 
-To reject a null hypothesis, a BF <1/10 is preferred.
+To reject a null hypothesis, a BF < 0.1 is preferred.
 
 We can see the immediate benefits of using Bayes Factor instead of p-values since they are independent of intentions and sample size.
 
