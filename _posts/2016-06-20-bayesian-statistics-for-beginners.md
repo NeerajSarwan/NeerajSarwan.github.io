@@ -63,7 +63,9 @@ Let's go deeper now.
 
 Now, we'll understand _frequentist statistics_ using an example of coin toss. The objective is to estimate the fairness of the coin. Below is a table representing the frequency of heads:  
 
-![](https://sites.google.com/site/yongyoonsite/_/rsrc/1374277114428/stats101/ch10/fig.10c.png)  
+<p align="center">
+  <img src="https://sites.google.com/site/yongyoonsite/_/rsrc/1374277114428/stats101/ch10/fig.10c.png"/>
+</p>  
 
 We know that probability of getting a head on tossing a fair coin is 0.5. `No. of heads` represents the actual number of heads obtained. `Difference` is the difference between `0.5*(No. of tosses) - no. of heads`.
 
