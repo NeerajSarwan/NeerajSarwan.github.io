@@ -250,7 +250,7 @@ So, there are several functions which support the existence of bayes theorem. Kn
 
  
 
-### 4.1. Bernoulli likelihood function
+### 4.1 - Bernoulli likelihood function
 
 Lets recap what we learned about the likelihood function. So, we learned that:
 
@@ -293,7 +293,7 @@ Furthermore, if we are interested in the probability of number of heads _z_ turn
 
 <br>
 
-### 4.2. Prior Belief  Distribution
+### 4.2 - Prior Belief  Distribution
 
 This distribution is used to represent our strengths on beliefs about the parameters based on the previous experience.
 
@@ -323,7 +323,9 @@ where, our focus stays on numerator. The denominator is there just to ensure th
 
 _Note:_ `α` and `β` are intuitive to understand since they can be calculated by knowing the mean (μ) and standard deviation (σ) of the distribution. In fact, they are related as :
 
-![](https://latex.codecogs.com/gif.latex?%5Cmu%20%3D%20%5Cfrac%7B%5Calpha%7D%7B%5Calpha%20&plus;%20%5Cbeta%7D) ![](https://latex.codecogs.com/gif.latex?%5Csigma%20%3D%20%5Csqrt%7B%5Cfrac%7B%5Calpha%20%5Cbeta%7D%7B%28%5Calpha%20&plus;%20%5Cbeta%29%5E2%20%28%5Calpha%20&plus;%20%5Cbeta%20&plus;%201%29%7D%7D)  
+<p align="center">
+  <img src="https://latex.codecogs.com/gif.latex?%5Cmu%20%3D%20%5Cfrac%7B%5Calpha%7D%7B%5Calpha%20&plus;%20%5Cbeta%7D) ![](https://latex.codecogs.com/gif.latex?%5Csigma%20%3D%20%5Csqrt%7B%5Cfrac%7B%5Calpha%20%5Cbeta%7D%7B%28%5Calpha%20&plus;%20%5Cbeta%29%5E2%20%28%5Calpha%20&plus;%20%5Cbeta%20&plus;%201%29%7D%7D"/>
+</p>  
 
 
 If mean and standard deviation of a distribution are known , then there shape parameters can be easily calculated. **Inference drawn from graphs above:**
