@@ -17,12 +17,10 @@ We fail to understand that machine learning is only one way to solve real world 
 
 In 1770s, Thomas Bayes introduced 'Bayes Theorem'. Even after centuries later, the importance of 'Bayesian Statistics' hasn't faded away. In fact, today this topic is being taught in great depths in some of the world's leading universities.
 
-With this idea, I've created this beginner's guide on Bayesian Statistics. I've tried to explain the concepts in a simplistic manner with examples. Prior knowledge of basic probability & statistics is desirable. By the end of this article, you will have a concrete understanding of Bayesian Statistics and its associated concepts.
+With this idea, I've created this beginner's guide on Bayesian Statistics. I've tried to explain the concepts in a simplistic manner with examples. Prior knowledge of basic probability & statistics is desirable. By the end of this article, you will have a concrete understanding of Bayesian Statistics and its associated concepts.  
 
 
-
-![](https://neerajsarwan.github.io/files/posts/Bayesian-Statistics-for-Beginners/12-768x475.jpg)
-
+![](https://neerajsarwan.github.io/files/posts/Bayesian-Statistics-for-Beginners/12-768x475.jpg)  
 
   
 
