@@ -24,7 +24,7 @@ tags:
 <p>So what do the above examples have in common? You possible guessed it right - <strong>TEXT processing</strong>.</p>
 <p>All the above three scenarios deal with humongous amount of text to perform different range of tasks like clustering in the google search example, classification in the second and Machine Translation in the third. Humans can deal with text format quite intuitively but provided we have millions of documents being generated in a single day, we cannot have humans performing the above the three tasks. It is neither scalable nor effective.</p>
 <p>&nbsp;</p>
-<p><img class="size-medium wp-image-36158 aligncenter" src="https://s3-ap-south-1.amazonaws.com/av-blog-media/wp-content/uploads/2017/06/06064148/joke-297x300.jpg" alt="" width="297" height="300" /></p>
+<p><img class="size-medium wp-image-36158 aligncenter" style="display: block; margin-left: auto; margin-right: auto;" src="https://s3-ap-south-1.amazonaws.com/av-blog-media/wp-content/uploads/2017/06/06064148/joke-297x300.jpg" alt="" width="297" height="300" /></p>
 <p>&nbsp;</p>
 <p>So, how do we make computers of today perform clustering, classification etc on a text data since we know that they are generally inefficient at handling and processing strings or texts for any fruitful outputs? <br />Sure, a computer can match two strings and tell you whether they are same or not. But how do we make computers tell you about football or Ronaldo when you search for Messi? How do you make a computer understand that &ldquo;Apple&rdquo; in &ldquo;Apple is a tasty fruit&rdquo; is a fruit that can be eaten and not a company?<br />The answer to the above questions lie in creating a representation for words that capture their <em>meanings</em>, <em>semantic relationships</em> and the different types of contexts they are used in. And all of these are implemented by using Word Embeddings or numerical representations of texts so that computers may handle them. Below, we will see formally what are Word Embeddings and their different types and how we can actually implement them to perform the tasks like returning efficient Google search results.</p>
 <p>&nbsp;</p>
@@ -544,7 +544,7 @@ tags:
 <h2>4. Using pre-trained word vectors</h2>
 <p>We are going to use google's pre-trained model. It contains word vectors for a vocabulary of 3 million words trained on around 100 billion words from the google news dataset. The downlaod link for the model is <a href="https://drive.google.com/file/d/0B7XkCwpI5KDYNlNUTTlSS21pQmM/edit">this</a>. Beware it is a 1.5 GB download.</p>
 <p><code></code></p>
-<p><code>from </code>gensim<code>.models import Word2Vec
+<p><code>from gensim</code><code>.models import Word2Vec
 </code></p>
 <p><code>#loading the downloaded model<br /></code><code></code><code>model <span class="pl-k">=</span> Word2Vec.load_word2vec_format(<span class="pl-s"><span class="pl-pds">'</span>GoogleNews-vectors-negative300.bin<span class="pl-pds">'</span></span>, <span class="pl-v">binary</span><span class="pl-k">=</span><span class="pl-c1">True</span>, <span class="pl-v">norm_only</span><span class="pl-k">=</span><span class="pl-c1">True</span>)</code></p>
 <p><code>#the model is loaded. It can be used to perform all of the tasks mentioned above.</code></p>
