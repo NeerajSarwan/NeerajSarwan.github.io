@@ -1,0 +1,181 @@
+---
+layout: post
+published: true
+title: A Guide to Sequence Prediction using Compact Prediction Tree
+subtitle: With Code in Python
+tags:
+  - Sequence Prediction
+---
+<h2>Introduction</h2>
+<p>Sequence prediction is one of the hottest application of Deep Learning these days. From building recommendation systems to speech recognition and natural language processing, its potential is seemingly endless. This is enabling never-thought-before solutions to emerge in the industry and is driving innovation. There are many different ways to perform sequence prediction such as using Markov models, Directed Graphs etc. from the Machine Learning domain and&nbsp; RNNs/LSTMs from the Deep Learning domain.</p>
+<p><img class="aligncenter wp-image-43655" style="display: block; margin-left: auto; margin-right: auto;" src="https://s3-ap-south-1.amazonaws.com/av-blog-media/wp-content/uploads/2018/04/background-2462428_960_720.jpg" alt="" width="276" height="275" /></p>
+<p>In this article, we will see how we can perform sequence prediction using a relatively unknown algorithm called <strong>Compact Prediction Tree (CPT)</strong>. You'll see how this is a surprisingly simple technique, yet it's more powerful than some very well known methods, such as Markov Methods, Directed Graphs, etc.</p>
+<p><em>I recommend reading this article before going further -&nbsp;<a href="https://www.analyticsvidhya.com/blog/2018/04/sequence-modelling-an-introduction-with-practical-use-cases/" target="_blank" rel="noopener">A Must-Read Introduction to Sequence Modelling(with use cases)</a>. </em><em>In this, Tavish&nbsp;introduced us to an entirely new class of problems called Sequence Modelling, along with some very good examples of their use cases and applications.</em></p>
+<p>&nbsp;</p>
+<h2>Table of Contents</h2>
+<ol>
+<li>Primer about Sequence Prediction</li>
+<li>Compact Prediction Tree Algorithm (CPT)</li>
+<li>Understanding the Data Structures in CPT</li>
+<li>Understanding how training and prediction works in CPT
+<ul>
+<li>Training Phase</li>
+<li>Prediction Phase</li>
+</ul>
+</li>
+<li>Creating Model and Making Predictions</li>
+</ol>
+<p>&nbsp;</p>
+<h2>Primer about Sequence Prediction</h2>
+<p>Sequence prediction is required whenever we can predict that a particular event is likely to be followed by another event and we need to predict that. Sequence prediction is an important class of problems which finds application in various industries. For example:</p>
+<ul>
+<li><strong>Web Page Prefetching</strong> - Given a sequence of web pages that a user has visited, browsers can predict the most likely page that a user will visit and pre-load it. This will, in turn, save time and improve the user experience</li>
+<li><strong>Product Recommendation</strong> - The sequence in which a user has added products into his/her shopping list can be used to recommend products that might be of interest to the user</li>
+<li><strong>Sequence Prediction of Clinical Events</strong> - Given the medical history of a patient, Sequence Prediction can be leveraged to perform differential diagnosis of any future medical conditions</li>
+<li><strong>Weather Forecasting</strong> - Predicting the weather at the next time step given the previous weather conditions.</li>
+</ul>
+<p>There are numerous additional areas where Sequence Prediction can be useful.</p>
+<p>&nbsp;</p>
+<h3>Current landscape of solutions</h3>
+<p>To see different kinds of solutions available for solving problems in this field, we had launched the <a href="https://datahack.analyticsvidhya.com/contest/mckinsey-analytics-online-hackathon-recommendation/" target="_blank" rel="noopener">Sequence Prediction Hackathon</a>. The participants came up with different approaches and the most popular of them was LSTMs/RNNs which was used by most of the people in the top 10 on the private leaderboard.</p>
+<p>LSTMs/RNNs have become a popular choice for modelling sequential data, be it text, audio, etc. However, they suffer from two fundamental problems:</p>
+<ul>
+<li>They take a long time to train, typically tens of hours</li>
+<li>They need to be re-trained for sequences containing items not seen in the previous training iteration. This is a very costly process and is not feasible for scenarios where new items are encountered frequently</li>
+</ul>
+<p>&nbsp;</p>
+<h2>Enter CPT (Compact Prediction Tree)</h2>
+<p>Compact Prediction Tree (CPT) is one such algorithm which I found to be more accurate than traditional Machine Learning models, like Markov Models, and Deep Learning models like Auto-Encoders.</p>
+<p><strong>The USP of CPT algorithm is its fast training and prediction time. I was able to train and make predictions within 4 minutes on the Sequence Prediction Hackathon dataset mentioned earlier.</strong></p>
+<p>Unfortunately, only a Java implementation of the algorithm exists and therefore is not as popular among Data Scientists in general (especially those who use Python).</p>
+<p>So, I have created a Python version of the library using the documentation developed by the algorithm creator. The Java code certainly helped in understanding certain sections of the research paper.</p>
+<p>The library for public usage is present <strong><a href="https://github.com/analyticsvidhya/CPT" target="_blank" rel="noopener">here</a>&nbsp;</strong>and you are most welcome to make contributions to it. The library is still incomplete in the sense that it does not have all recommendations of the author of the algorithm, but is <strong>good enough to get a decent score of 0.185 on the hackathon leaderboard, all within a few minutes</strong>. Upon completion, I believe the library should be able to match the performance of RNNs/LSTMs for this task.</p>
+<p>In the next section, we will go through the inner workings of the CPT algorithm, and how it manages to perform better than some of the popular traditional machine learning models like Markov Chains, DG, etc.</p>
+<p>&nbsp;</p>
+<h2>Understanding the Data Structures in CPT</h2>
+<p>As a prerequisite, it is good to have an understanding of the format of the data accepted by the Python Library CPT. CPT accepts two .csv files - Train and Test. Train contains the training sequences while the test file contains the sequences whose next 3 items need to be predicted for each sequence. For the purpose of clarity, the sequences in both Train and Test files are defined as below:</p>
+<pre>  1,2,3,4,5,6,7
+  5,6,3,6,3,4,5
+  .
+  .
+  .</pre>
+<p>Note that the sequences could be of varying length. Also, One-hot encoded sequences will not give appropriate results. The CPT algorithm makes use of three basic data structures, which we will talk about briefly below.</p>
+<p>&nbsp;</p>
+<h3>1. Prediction Tree</h3>
+<p>A prediction tree is a tree of nodes, where each node has three elements:</p>
+<ul>
+<li>Item - the actual item stored in the node.</li>
+<li>Children - list of all the children nodes of this node.</li>
+<li>Parent - A link or reference to the Parent node of this node.</li>
+</ul>
+<p>A Prediction Tree is basically a <a href="https://en.wikipedia.org/wiki/Trie" target="_blank" rel="noopener">trie</a> data structure which compresses the entire training data into the form of a tree. For readers who are not aware of how a trie structure works, the trie structure diagram for the below two sequences will clarify things.</p>
+<p><strong>Sequence 1:</strong> A, B, C</p>
+<p><strong>Sequence 2:</strong> A, B, D</p>
+<p><img class="size-medium wp-image-43605 aligncenter" style="display: block; margin-left: auto; margin-right: auto;" src="https://s3-ap-south-1.amazonaws.com/av-blog-media/wp-content/uploads/2018/04/Screenshot-from-2018-04-19-17-31-17-300x276.png" alt="" width="300" height="276" /></p>
+<p>The Trie data structure starts with the first element A of the sequence A,B,C and adds it to the root node. Then B gets added to A and C to B. The Trie again starts at the root node for every new sequence and if an element is already added to the structure, then it skips adding it again. The resulting structure is shown above. So this is how a Prediction Tree compresses the training data effectively.</p>
+<p>&nbsp;</p>
+<h3>2. Inverted Index (II)</h3>
+<p>Inverted Index is a dictionary where the key is the item in the training set, and value is the set of the sequences in which this item has appeared. For example,</p>
+<p><strong>Sequence 1:</strong> A,B,C,D <br /><strong>Sequence 2:</strong> B,C <br /><strong>Sequence 3:</strong> A,B</p>
+<p>The Inverted Index for the above sequence will look like the below:</p>
+<p><code>II = {</code> <code> &lsquo;A&rsquo;:{&lsquo;Seq1&rsquo;,&rsquo;Seq3&rsquo;},</code> <code> &rsquo;B&rsquo;:{&lsquo;Seq1&rsquo;,&rsquo;Seq2&rsquo;,&rsquo;Seq3&rsquo;},</code> <code> &rsquo;C&rsquo;:{&lsquo;Seq1&rsquo;,&rsquo;Seq2&rsquo;},</code> <code> &rsquo;D&rsquo;:{&lsquo;Seq1&rsquo;}</code> <code> }</code></p>
+<p><code></code>&nbsp;</p>
+<h3>3. LookUp Table (LT)</h3>
+<p>A LookUp Table is a dictionary with a key as the Sequence ID and value as the terminal node of the sequence in the Prediction Tree. For example:</p>
+<p><strong>Sequence 1:</strong> A, B, C<br /><strong>Sequence 2:</strong> A, B, D</p>
+<p><code>LT = {</code> <code> &ldquo;Seq1&rdquo; : node(C),</code> <code> &ldquo;Seq2&rdquo; : node(D)</code> <code> }</code> &nbsp;</p>
+<p>&nbsp;</p>
+<h2>Understanding how Training and Prediction works in CPT</h2>
+<p>We will go through an example to solidify our understanding of the Training and Prediction processes in the CPT algorithm. Below is the training set for this example:</p>
+<p>&nbsp;</p>
+<table border="0" cellspacing="0"><colgroup span="4" width="85"></colgroup>
+<tbody>
+<tr>
+<td align="left" height="17">A</td>
+<td align="left">B</td>
+<td align="left">C</td>
+<td align="left">&nbsp;</td>
+</tr>
+<tr>
+<td align="left" height="17">A</td>
+<td align="left">B</td>
+<td align="left">&nbsp;</td>
+<td align="left">&nbsp;</td>
+</tr>
+<tr>
+<td align="left" height="17">A</td>
+<td align="left">B</td>
+<td align="left">D</td>
+<td align="left">C</td>
+</tr>
+<tr>
+<td align="left" height="17">B</td>
+<td align="left">C</td>
+<td align="left">&nbsp;</td>
+<td align="left">&nbsp;</td>
+</tr>
+</tbody>
+</table>
+<p>&nbsp;</p>
+<p>As you can see, the above training set has 3 sequences. Let us denote the sequences with ids: <em>seq1</em>, <em>seq2</em> and <em>seq3</em>. A, B, C, and D are the different unique items in the training dataset. &nbsp;</p>
+<p>&nbsp;</p>
+<h3>Training Phase</h3>
+<p>The training phase consists of building the Prediction Tree, Inverted Index (II), and the LookUp Table (LT) simultaneously. We will now look at the entire training process phase.</p>
+<p><strong>Step 1:</strong> Insertion of A,B,C. <img class="aligncenter size-medium" src="https://d2mxuefqeaa7sj.cloudfront.net/s_775E507249226389559AB01E6DD2E53D15F2A8C38333020C082B61ECBA1DF808_1524134499580_image.png" width="679" height="549" /></p>
+<p>We already have a root node and a current node variable set to root node initially.</p>
+<p>We start with A, and check if A exists as the child of the root node. If it does not, we add A to the child list of the root node, add an entry of A in Inverted Index with value <em>seq1,</em> and then move the current node to A.</p>
+<p>We look at the next item, i.e B, and see if B exists as the child of the current node, i.e, A. If not, we will add B to the child list of A, add an entry of B in the Inverted Index with value <em>seq1 </em>and&nbsp;then move the current node to B.</p>
+<p>We repeat the above procedure till we are done adding the last element of <em>seq1</em>. Finally, we will add the last node of <em>seq1</em>, C, to the LookUp table with key = &ldquo;<em>seq1</em>&rdquo; and value = node(C). &nbsp;</p>
+<p>&nbsp;</p>
+<p><strong>Step 2:</strong> Insertion of A,B. <img class="aligncenter size-medium" src="https://d2mxuefqeaa7sj.cloudfront.net/s_775E507249226389559AB01E6DD2E53D15F2A8C38333020C082B61ECBA1DF808_1524133938420_image.png" width="756" height="534" /></p>
+<p>&nbsp;</p>
+<p>&nbsp; <strong>Step 3:</strong> Insertion of A,B,D,C. <img class="aligncenter size-medium" src="https://d2mxuefqeaa7sj.cloudfront.net/s_775E507249226389559AB01E6DD2E53D15F2A8C38333020C082B61ECBA1DF808_1524134187040_image.png" width="749" height="549" /></p>
+<p>&nbsp;</p>
+<p>&nbsp; <strong>Step 4:</strong> Insertion of B,C. <img class="alignnone size-medium" src="https://d2mxuefqeaa7sj.cloudfront.net/s_775E507249226389559AB01E6DD2E53D15F2A8C38333020C082B61ECBA1DF808_1524134438989_image.png" width="772" height="547" /></p>
+<p>&nbsp;</p>
+<p>We do keep doing this till we exhaust every row in the training dataset (remember, a single row represents a single sequence). We now have all the required data structures in place to start making predictions on the test dataset. Let&rsquo;s have a look at the prediction phase now.</p>
+<p>&nbsp;</p>
+<h3>Prediction Phase</h3>
+<p>The Prediction Phase involves making predictions for each sequence of the data in the test set in an iterative manner. For a single row, we find sequences similar to that row using the Inverted Index(II). Then, we find the consequent of the similar sequences and add the items in the consequent in a <em>Counttable</em> dictionary with their scores. Finally, the C<em>ounttable</em> is used to return the item with the highest score as the final prediction. We will see each of these steps in detail to get an in-depth understanding.</p>
+<p><em>Target Sequence - A, B</em> &nbsp;</p>
+<p>&nbsp;</p>
+<p><strong>Step 1: Find sequences similar to the Target Sequence.</strong></p>
+<p>Sequences similar to the Target Sequences are found by making use of the Inverted Index. These are identified by:</p>
+<ul>
+<li>finding the unique items in the target sequence,</li>
+<li>finding the set of sequence ids in which a particular unique item is present and then,</li>
+<li>taking an intersection of the sets of all unique items</li>
+</ul>
+<p>For example:</p>
+<p>Sequences in which A is present = {&lsquo;Seq1&rsquo;,&rsquo;Seq2&rsquo;,&rsquo;Seq3&rsquo;} <br />Sequences in which B is present = {&lsquo;Seq1&rsquo;,&rsquo;Seq2&rsquo;,&rsquo;Seq3&rsquo;,&rsquo;Seq4&rsquo;} <br />Similar sequences to Target Sequence = intersection of set A and set B = {&lsquo;Seq1&rsquo;,&rsquo;Seq2&rsquo;,&rsquo;Seq3&rsquo;} &nbsp;</p>
+<p>&nbsp;</p>
+<p><strong>Step 2: Finding the consequent of each similar sequence to the Target Sequence</strong></p>
+<p>For each similar sequence, consequent is defined as its longest sub-sequence after the last occurrence of the last item of the Target Sequence in the similar sequence minus the items present in the Target Sequence.</p>
+<p><em>** Note this is different from what the developers have mentioned in their research paper, but this has worked for me better than their implementation.</em></p>
+<p>Let's understand this with the help of an example:</p>
+<p>Target Sequence = ['A','B','C'] <br />Similar Sequence = ['X','A','Y','B','C','E','A','F'] <br />Last item in Target Sequence = &lsquo;C&rsquo; <br />Longest Sub-Sequence after last occurrence of &lsquo;C&rsquo; in Similar Sub-Sequence = [&lsquo;E&rsquo;,&rsquo;A&rsquo;,&rsquo;F&rsquo;] Consequent = [&lsquo;E&rsquo;,&rsquo;F&rsquo;] &nbsp;</p>
+<p>&nbsp;</p>
+<p><strong>Step 3: Adding elements of the Consequent to the <em>Counttable</em> dictionary along with their score.</strong></p>
+<p>The elements of consequent of each similar sequence is added to the dictionary along with a score. Let's continue with the above example for instance. The score for the items in the Consequent ['E','F'] is calculated as below:</p>
+<p>current state of counttable = {}, an empty dictionary</p>
+<p>If the item is not present in the dictionary, then, <br /><strong>score = 1 + (1/number of similar sequences) +(1/number of items currently in the countable dictionary+1)*0.001</strong></p>
+<p>otherwise, <br /><strong>score = (1 + (1/number of similar sequences) +(1/number of items currently in the countable dictionary+1)*0.001) * oldscore</strong></p>
+<p>So for element E, i.e. the first item in the consequent, the score will be <br />score[E] = 1 + (1/1) + 1/(0+1)*0.001 = 2.001 <br />score[F]&nbsp; 1 + (1/1) + 1/(1+1)*0.001 = 2.0005</p>
+<p>After the above calculations, counttable looks like, <br /><code>counttable = {'E' : 2.001, 'F': 2.0005}</code> &nbsp;</p>
+<p>&nbsp;</p>
+<p><strong>Step 4: Making Prediction using <em>Counttable</em></strong></p>
+<p>Finally, the key is returned with the greatest value in the <em>Counttable</em> as the prediction. In the case of the above example, <strong>E</strong> is returned as a prediction.</p>
+<p>&nbsp;</p>
+<h2>Creating Model and Making Predictions</h2>
+<p><strong>Step 1:</strong> Clone the GitHub repository from <a href="https://github.com/analyticsvidhya/CPT" target="_blank" rel="noopener">here</a>.</p>
+<p><code>git clone https://github.com/NeerajSarwan/CPT.git
+</code></p>
+<p><strong>Step 2:</strong> Use the below code to read the .csv files, train your model and make the predictions.</p>
+<p><code>#Importing everything from the CPT file</code> <br /><code> from CPT import *</code> <code></code></p>
+<p><code>#Creating an object of the CPT Class</code> <br /><code> model = CPT()</code></p>
+<p><code>#Reading train and test file and converting them to data and target.</code> <br /><code> data, target = model.load_files(&ldquo;./data/train.csv&rdquo;,&rdquo;./data/test.csv&rdquo;)</code></p>
+<p><code></code> <code>#Training the model</code> <br /><code> model.train(data)</code></p>
+<p><code>#Making predictions on the test dataset</code> <br /><code> predictions = model.predict(data,target,5,1)</code></p>
+<p><code></code>&nbsp;</p>
+<h2>End Notes</h2>
+<p>In this article, we covered a highly effective and accurate algorithm for sequence predictions - Compact Prediction Tree. I encourage you to try it out yourself on the Sequence Prediction Hackathon dataset and climb higher on the private leaderboard! If you want to contribute to the <a href="https://github.com/analyticsvidhya/CPT" target="_blank" rel="noopener">CPT library</a>, feel free to fork the repository or raise issues. If you know of any other methods to perform Sequence Predictions, write them in the comments section below. And do not forget to star the CPT library. 🙂 &nbsp;</p>
