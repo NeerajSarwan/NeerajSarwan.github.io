@@ -1,17 +1,16 @@
 ---
 layout: default
-title: "Search ml_stack"
+title: "Search neerajsarwan.github.io"
 css: "/css/search.css"
 ---
 
-# Search ml_stack
+# Search neerajsarwan.github.io
 
 ### Using the Amazing Google
 
-<div id="google-custom-search">
 <script>
   (function() {
-    var cx = '009149815852525205152:wmudrk1brn8';
+    var cx = '005608085114722940185:nuygpksotba';
     var gcse = document.createElement('script');
     gcse.type = 'text/javascript';
     gcse.async = true;
@@ -20,5 +19,4 @@ css: "/css/search.css"
     s.parentNode.insertBefore(gcse, s);
   })();
 </script>
-<gcse:search>Loading... Please wait</gcse:search>
-</div>
+<gcse:search></gcse:search>
