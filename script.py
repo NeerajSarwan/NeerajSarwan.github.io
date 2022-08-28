@@ -21,7 +21,8 @@ def filtering_function(URLS):
     filtered_urls = []
     for URL in URLS:
         if "neeraj" not in URL:
-            filtered_urls.append(URL)
+            if 'latex' in URL or 'amazonaws' in URL:
+                filtered_urls.append(URL)
     return filtered_urls
 
 def generate_random_string(N=10):
@@ -34,7 +35,7 @@ def download_img(image_url):
     """
     img_data = requests.get(image_url).content
     img_name = generate_random_string()
-    full_img_name = "./files/posts/{}/{}".format(CLEANED_FILENAME, img_name)
+    full_img_name = "https://neerajsarwan.github.io/files/posts/{}/{}".format(CLEANED_FILENAME, img_name)
     with open(full_img_name, 'wb') as handler:
         handler.write(img_data)
     return full_img_name
@@ -58,6 +59,7 @@ def replace_remote_assetts_with_local():
     with open("./{}/{}".format(DIRECTORY, FILENAME), "r") as f:
         s = f.read()
     mapping = url_processing(s)
+    print(mapping)
     # replace remote asset with local
     for old_asset, new_asset in mapping.items():
         s = s.replace(old_asset, new_asset)
