@@ -381,7 +381,7 @@ i.e our distribution will be biased on the right side. Suppose, you observed 80 
 
 Lets visualize both the beliefs on a graph:  
 
-![](https://dl2.pushbulletusercontent.com/wzZgYSQOOP4zP1TnH8GWl967VyZBVG6s/new.jpg)  
+![](https://neerajsarwan.github.io/files/posts/Bayesian-Statistics-for-Beginners/prior_post.jpeg)  
 
 The R code for the above graph is as:  
 
