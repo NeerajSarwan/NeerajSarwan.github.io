@@ -86,7 +86,7 @@ def replace_remote_assetts_with_local():
     # replace remote asset with local
     for old_asset, new_asset in mapping.items():
         s = s.replace(old_asset, new_asset)
-    with open("./{}/new_{}".format(DIRECTORY, FILENAME), "w") as f:
+    with open("./{}/{}".format(DIRECTORY, FILENAME), "w") as f:
         f.write(s)
 
 def clean_filename(f):
