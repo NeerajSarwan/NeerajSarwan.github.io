@@ -35,9 +35,12 @@ def download_img(image_url):
     """
     img_data = requests.get(image_url).content
     img_name = generate_random_string()
-    full_img_name = "https://neerajsarwan.github.io/files/posts/{}/{}".format(CLEANED_FILENAME, img_name)
+    full_img_name = "./files/posts/{}/{}".format(CLEANED_FILENAME, img_name)
     with open(full_img_name, 'wb') as handler:
         handler.write(img_data)
+    full_img_name = full_img_name.split("/")
+    full_img_name[0] = "https://neerajsarwan.github.io"
+    full_img_name = "/".join(full_img_name)
     return full_img_name
 
 def url_processing(string):
