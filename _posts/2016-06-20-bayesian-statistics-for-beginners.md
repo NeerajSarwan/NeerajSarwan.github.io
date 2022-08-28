@@ -64,7 +64,7 @@ Let's go deeper now.
 Now, we'll understand _frequentist statistics_ using an example of coin toss. The objective is to estimate the fairness of the coin. Below is a table representing the frequency of heads:  
 <br>
 <p align="center">
-  <img src="https://sites.google.com/site/yongyoonsite/_/rsrc/1374277114428/stats101/ch10/fig.10c.png"/>
+  <img src="https://neerajsarwan.github.io/files/posts/Bayesian-Statistics-for-Beginners/frequency_table.png"/>
 </p>  
 <br>
 We know that probability of getting a head on tossing a fair coin is 0.5. `No. of heads` represents the actual number of heads obtained. `Difference` is the difference between `0.5*(No. of tosses) - no. of heads`.
@@ -137,27 +137,27 @@ Set A represents one set of events and Set B represents another. We wish to calc
 Now since B has happened, the part which now matters for A is the part shaded in blue which is interestingly ![CodeCogsEqn](https://neerajsarwan.github.io/files/posts/Bayesian-Statistics-for-Beginners/CodeCogsEqn-1.gif). So, the probability of A given B turns out to be:  
 
 <p align="center">
-  <img src="https://latex.codecogs.com/gif.latex?%5Cfrac%7BBlue%20Area%7D%7BRed%20Area+Blue%20Area%7D"/>
+  <img src="https://neerajsarwan.github.io/files/posts/Bayesian-Statistics-for-Beginners/prob_a_given_b.gif"/>
 </p>
 
 
 Therefore, we can write the formula for event B given A has already occurred by:  
 
 <p align="center">
-  <img src="https://latex.codecogs.com/gif.latex?P%28B%7CA%29%3D%5Cfrac%7BP%28A%5Ccap%20B%29%7D%7BP%28A%29%7D"/>
+  <img src="https://neerajsarwan.github.io/files/posts/Bayesian-Statistics-for-Beginners/prob_b_given_a.gif"/>
 </p>  
 
 or  
 
 <p align="center">
-  <img src="https://latex.codecogs.com/gif.latex?P%28A%7CB%29%3D%5Cfrac%7BP%28A%5Ccap%20B%29%7D%7BP%28B%29%7D"/>
+  <img src="https://neerajsarwan.github.io/files/posts/Bayesian-Statistics-for-Beginners/prob_a_given_b_1.gif"/>
 </p>  
 
 
 Now, the second equation can be rewritten as :  
 
 <p align="center">
-  <img src="https://latex.codecogs.com/gif.latex?P%28A%7CB%29%3D%5Cfrac%7BP%28B%7CA%29XP%28A%29%7D%7BP%28B%29%7D"/>
+  <img src="https://neerajsarwan.github.io/files/posts/Bayesian-Statistics-for-Beginners/prob_a_given_b_2.gif"/>
 </p>  
 
 
@@ -431,7 +431,7 @@ The _alternative hypothesis_ is that all values of θ are possible, hence a fla
 Now, posterior distribution of the new data looks like below.  
 
 <p align="center">
-  <img src="https://dl2.pushbulletusercontent.com/LOpQQ3QTLuyyj3ji7cDFsCLfUvEA664e/Screenshot%20%2842%29.png"/>
+  <img src="https://neerajsarwan.github.io/files/posts/Bayesian-Statistics-for-Beginners/bayes_factor.png"/>
 </p>  
 
 
@@ -461,7 +461,7 @@ HDI is formed from the posterior distribution after observing the new data. Sinc
 Notice, how the 95% HDI in prior distribution is wider than the 95% posterior distribution. This is because our belief in HDI increases upon observation of new data.
 
 <p align="center">
-  <img src="https://dl2.pushbulletusercontent.com/xg2R7m3iOLGa9DhjR6I8KfP2gaH1uJTq/Screenshot%20%2843%29.png"/>
+  <img src="https://neerajsarwan.github.io/files/posts/Bayesian-Statistics-for-Beginners/HDI.png"/>
 </p>  
 
 
