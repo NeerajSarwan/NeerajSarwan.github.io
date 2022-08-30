@@ -1,3 +1,4 @@
+import os
 import re
 import requests
 import random
@@ -5,19 +6,17 @@ import argparse
 import string as st
 
 def Find_(string):
-    s = string[:]
     urls = []
-    while(len(s)>0):
-        http_index = s.find("http")
-        if http_index!=-1:
-            sub_s = s[http_index:]
-            quotes_index = sub_s.find('"')
-            bracket_index = sub_s.find(')')
-            closing_index = min(quotes_index, bracket_index)
-            urls.append(s[http_index:http_index+closing_index])
-            s = s[http_index+closing_index+1:]
-        else:
-            break
+    while(string.find("http")!=-1):
+        http_index = string.find("http")
+        sub_string = string[http_index:]
+        quotes_index = sub_string.find('"')
+        bracket_index = sub_string.find(')')
+        quotes_index = len(sub_string)-1 if quotes_index == -1 else quotes_index
+        bracket_index = len(sub_string)-1 if bracket_index == -1 else bracket_index
+        closing_index = min(quotes_index, bracket_index)
+        urls.append(string[http_index:http_index+closing_index])
+        string = string[http_index+closing_index+1:]
     return urls
   
 def Find(string):
@@ -37,7 +36,7 @@ def filtering_function(URLS):
     filtered_urls = []
     for URL in URLS:
         if "neeraj" not in URL:
-            if 'latex' in URL or 'amazonaws' in URL:
+            if 'latex' in URL or 'amazonaws' in URL or ".jpg" in URL or ".png" in URL or ".gif" in URL or ".jpeg" in URL or "svg" in URL:
                 filtered_urls.append(URL)
     return filtered_urls
 
@@ -54,6 +53,7 @@ def download_img(image_url):
         img_data = img_response.content
         img_name = generate_random_string()
         full_img_name = "./files/posts/{}/{}".format(CLEANED_FILENAME, img_name)
+        os.makedirs("./files/posts/{}".format(CLEANED_FILENAME), exist_ok=True)
         with open(full_img_name, 'wb') as handler:
             handler.write(img_data)
         full_img_name = full_img_name.split("/")
@@ -61,6 +61,7 @@ def download_img(image_url):
         full_img_name = "/".join(full_img_name)
     else:
         print("Defective URL: {}".format(image_url))
+        raise ValueError("Content not found")
     return full_img_name
 
 def url_processing(string):
@@ -71,11 +72,15 @@ def url_processing(string):
     4. Replace the web url with the local url
     """
     found_urls = Find_(string)
+    print("Here", found_urls)
     filtered_urls = filtering_function(found_urls)
     name_mapping = {}
     for URL in filtered_urls:
-        LOCAL_NAME = download_img(URL)
-        name_mapping[URL] = LOCAL_NAME
+        try:
+            LOCAL_NAME = download_img(URL)
+            name_mapping[URL] = LOCAL_NAME
+        except:
+            pass
     return name_mapping
 
 def replace_remote_assetts_with_local():
@@ -106,5 +111,8 @@ if __name__ == "__main__":
     args = parser.parse_args()
     DIRECTORY = args.d
     FILENAME = args.f
+    # DIRECTORY = "_posts"
+    # FILENAME = "2017-01-31-comprehensive-and-practical-inferential-statistics-guide-for-data-science.md"
+    # CLEANED_FILENAME = clean_filename(FILENAME)
     CLEANED_FILENAME = clean_filename(args.f)
     replace_remote_assetts_with_local()

@@ -98,7 +98,7 @@ Suppose, you note down the salary of any 100 random Data Science professionals i
 When you plot a frequency graph of these 200 means, you are likely to get a curve similar to the one below.
 
 <p align="center">
-  <img src="https://s3-ap-south-1.amazonaws.com/av-blog-media/wp-content/uploads/2017/01/30111011/sampling_dist.png"/>
+  <img src="https://neerajsarwan.github.io/files/posts/Comprehensive-And-Practical-Inferential-Statistics-Guide-For-Data-Science/F83JKDUIH2"/>
 </p>  
 
 This looks very much similar to the normal curve that you studied in the Descriptive Statistics. This is called Sampling Distribution or the graph obtained by plotting sample means. Let us look at a more formal description of a Sampling Distribution.
@@ -108,7 +108,7 @@ A Sampling Distribution is a probability distribution of a statistic obtained th
 *   The shape of the Sampling Distribution does not reveal anything about the shape of the population. For example, for the above Sampling Distribution, the population distribution may look like the below graph.
 
 <p align="center">
-  <img src="https://s3-ap-south-1.amazonaws.com/av-blog-media/wp-content/uploads/2017/01/30112618/sample_7.png"/>
+  <img src="https://neerajsarwan.github.io/files/posts/Comprehensive-And-Practical-Inferential-Statistics-Guide-For-Data-Science/38QZ2JZBU0"/>
 </p>  
 
 Population Distribution
@@ -134,7 +134,7 @@ This seemed too technical isn't it? Let's break this down to understand this poi
 3.  As we increase the sample size, the sampling distribution squeezes from both sides giving us a better estimate of the population statistic since it lies somewhere in the middle of the sampling distribution (generally). The below image will help you visualize the effect of sample size on the shape of distribution.
 
 <p align="center">
-  <img src="https://s3-ap-south-1.amazonaws.com/av-blog-media/wp-content/uploads/2017/01/30112628/sample_8.png"/>
+  <img src="https://neerajsarwan.github.io/files/posts/Comprehensive-And-Practical-Inferential-Statistics-Guide-For-Data-Science/ZCKD5Z6DM3"/>
 </p>  
 
 Now, since we have collected the samples and plotted their means, it is important to know where the population mean lies with respect to a particular sample mean and how confident can we be about it. This brings us to our next topic - **Confidence Interval.**
@@ -146,7 +146,7 @@ Now, since we have collected the samples and plotted their means, it is importan
 The confidence interval is a type of interval estimate from the sampling distribution which gives a range of values in which the population statistic may lie. Let us understand this with the help of an example.
 
 <p align="center">
-  <img src="https://s3-ap-south-1.amazonaws.com/av-blog-media/wp-content/uploads/2017/01/30111058/sampling_3.png"/>
+  <img src="https://neerajsarwan.github.io/files/posts/Comprehensive-And-Practical-Inferential-Statistics-Guide-For-Data-Science/JELFAA6X5W"/>
 </p>  
 
 We know that 95% of the values lie within 2 (1.96 to be more accurate) standard deviation of a normal distribution curve. So, for the above curve, the blue shaded portion represents the confidence interval for a sample mean of 0.
@@ -154,13 +154,13 @@ We know that 95% of the values lie within 2 (1.96 to be more accurate) standard 
 Formally, Confidence Interval is defined as,  
 
 <p align="center">
-  <img src="https://s3-ap-south-1.amazonaws.com/av-blog-media/wp-content/uploads/2017/01/30111025/image_11.png"/>
+  <img src="https://neerajsarwan.github.io/files/posts/Comprehensive-And-Practical-Inferential-Statistics-Guide-For-Data-Science/J6F81QPWH8"/>
 </p>  
 
 whereas,  
 
-![](https://s3-ap-south-1.amazonaws.com/av-blog-media/wp-content/uploads/2017/01/30112021/x-bar.png) = the sample mean  
-![](https://s3-ap-south-1.amazonaws.com/av-blog-media/wp-content/uploads/2017/01/30111043/image_21.png)\= Z value for desired confidence level α  
+![](https://neerajsarwan.github.io/files/posts/Comprehensive-And-Practical-Inferential-Statistics-Guide-For-Data-Science/1LTORZAX7U) = the sample mean  
+![](https://neerajsarwan.github.io/files/posts/Comprehensive-And-Practical-Inferential-Statistics-Guide-For-Data-Science/6XYHNZLRYO)\= Z value for desired confidence level α  
 
 **σ** = the population standard deviation
 
@@ -173,7 +173,7 @@ And it is easy to infer that the error can be both positive and negative side. T
 The below image will help you better visualize Margin of Error and Confidence Interval.
 
 <p align="center">
-  <img src="https://s3-ap-south-1.amazonaws.com/av-blog-media/wp-content/uploads/2017/01/30112037/sampling_4.png"/>
+  <img src="https://neerajsarwan.github.io/files/posts/Comprehensive-And-Practical-Inferential-Statistics-Guide-For-Data-Science/3CXQKZJW8C"/>
 </p>  
 
 The shaded portion on horizontal axis represents the Confidence Interval and half of it is Margin of Error which can be in either direction of x (bar).
@@ -241,7 +241,7 @@ There are two types of errors that are generally encountered while conducting Hy
 The below image will summarize the types of error :  
 
 <p align="center">
-  <img src="http://www.personal.ceu.hu/students/08/Olga_Etchevskaia/images/errors.jpg"/>
+  <img src="https://neerajsarwan.github.io/files/posts/Comprehensive-And-Practical-Inferential-Statistics-Guide-For-Data-Science/YFNLDPJKBY"/>
 </p>  
 
 6\. T-tests
@@ -252,7 +252,7 @@ T-tests are very much similar to the z-scores, the only difference being that in
 The Sample Standard Deviation is given as:  
 
 <p align="center">
-  <img src="https://s3-ap-south-1.amazonaws.com/av-blog-media/wp-content/uploads/2017/01/30121520/eq_2.png"/>
+  <img src="https://neerajsarwan.github.io/files/posts/Comprehensive-And-Practical-Inferential-Statistics-Guide-For-Data-Science/H7VHIBT5PR"/>
 </p>  
 
 where n-1 is the Bessel's correction for estimating the population parameter.
@@ -281,7 +281,7 @@ This is the same test as we described above. This test is used to:
 For eg: A pizza delivery manager may perform a 1-sample t-test whether their delivery time is significantly different from that of the advertised time of 30 minutes by their competitors.
 
 <p align="center">
-  <img src="https://s3-ap-south-1.amazonaws.com/av-blog-media/wp-content/uploads/2017/01/30122221/eq_3.png"/>
+  <img src="https://neerajsarwan.github.io/files/posts/Comprehensive-And-Practical-Inferential-Statistics-Guide-For-Data-Science/RZ5S0R1M50"/>
 </p>  
 
 where,  
@@ -296,19 +296,19 @@ where,
 Paired t-test is performed to check whether there is a difference in mean after a treatment on a sample in comparison to before. It checks whether the Null hypothesis: The difference between the means is Zero, can be rejected or not.
 
 <p align="center">
-  <img src="https://s3-ap-south-1.amazonaws.com/av-blog-media/wp-content/uploads/2017/01/30230329/Screenshot-13.png"/>
+  <img src="https://neerajsarwan.github.io/files/posts/Comprehensive-And-Practical-Inferential-Statistics-Guide-For-Data-Science/MFUMTF5R9I"/>
 </p>  
 
 
 The above example suggests that the Null Hypothesis should not be rejected and that there is no significant difference in means before and after the intervention since p-value is not less than the alpha value (o.o5) and t stat is not less than t-critical. The excel sheet for the above exercise is available [here](https://drive.google.com/open?id=0ByAvlBzuj2TgQ0M0U2lVZnZuams).
 
 <p align="center">
-  <img src="https://s3-ap-south-1.amazonaws.com/av-blog-media/wp-content/uploads/2017/01/30122821/eq_4.png"/>
+  <img src="https://neerajsarwan.github.io/files/posts/Comprehensive-And-Practical-Inferential-Statistics-Guide-For-Data-Science/9JW87GFU99"/>
 </p>  
 
 where, **d (bar)** = mean of the case wise difference between before and after,
 
-![](https://s3-ap-south-1.amazonaws.com/av-blog-media/wp-content/uploads/2017/01/30060715/Image_1.png)\= standard deviation of the difference
+![](https://neerajsarwan.github.io/files/posts/Comprehensive-And-Practical-Inferential-Statistics-Guide-For-Data-Science/CC12U5LO5A)\= standard deviation of the difference
 
  **n** = sample size.
 
@@ -322,7 +322,7 @@ This test is used to determine:
 *   Calculate a range of values that is likely to include the difference between the population means.
 
 <p align="center">
-  <img src="https://s3-ap-south-1.amazonaws.com/av-blog-media/wp-content/uploads/2017/01/30123537/eq_41.png"/>
+  <img src="https://neerajsarwan.github.io/files/posts/Comprehensive-And-Practical-Inferential-Statistics-Guide-For-Data-Science/LQ7NVNY72K"/>
 </p>  
 
 The above formula represents the 2 sample t-test and can be used in situations like to check whether two machines are producing the same output. The points to be noted for this test are:
@@ -332,9 +332,9 @@ The above formula represents the 2 sample t-test and can be used in situations l
 
 where, **X1 (bar)** = mean of the first group
 
- ![](https://s3-ap-south-1.amazonaws.com/av-blog-media/wp-content/uploads/2017/01/30060909/Image_2.png)**=** represents1st group sample standard deviation
+ ![](https://neerajsarwan.github.io/files/posts/Comprehensive-And-Practical-Inferential-Statistics-Guide-For-Data-Science/WZKNK4W51K)**=** represents1st group sample standard deviation
 
-![](https://s3-ap-south-1.amazonaws.com/av-blog-media/wp-content/uploads/2017/01/30060913/Image_3.png)\= represents the 1st group sample size.
+![](https://neerajsarwan.github.io/files/posts/Comprehensive-And-Practical-Inferential-Statistics-Guide-For-Data-Science/JI9CW7NQMB)\= represents the 1st group sample size.
 
  
 
@@ -384,26 +384,26 @@ Mean Square (between groups) = Sum of Squares (between groups) / degree of freed
 Mean Square (within group) = Sum of Squares (within group) / degree of freedom (within group)  
 
 <p align="center">
-  <img src="https://s3-ap-south-1.amazonaws.com/av-blog-media/wp-content/uploads/2017/01/20071114/Screenshot-from-2017-01-20-04-38-39.png"/>
+  <img src="https://neerajsarwan.github.io/files/posts/Comprehensive-And-Practical-Inferential-Statistics-Guide-For-Data-Science/U900Y66MC9"/>
 </p>  
 
 <p align="center">
-  <img src="https://s3-ap-south-1.amazonaws.com/av-blog-media/wp-content/uploads/2017/01/30124859/eq_5-300x107.png"/>
+  <img src="https://neerajsarwan.github.io/files/posts/Comprehensive-And-Practical-Inferential-Statistics-Guide-For-Data-Science/GXHXJVJ2HP"/>
 </p>  
 
 <p align="center">
-  <img src="https://s3-ap-south-1.amazonaws.com/av-blog-media/wp-content/uploads/2017/01/30124918/eq_6-300x118.png"/>
+  <img src="https://neerajsarwan.github.io/files/posts/Comprehensive-And-Practical-Inferential-Statistics-Guide-For-Data-Science/P3E2JMKJFB"/>
 </p>  
 
 <p align="center">
-  <img src="https://s3-ap-south-1.amazonaws.com/av-blog-media/wp-content/uploads/2017/01/30125021/eq_7-300x145.png"/>
+  <img src="https://neerajsarwan.github.io/files/posts/Comprehensive-And-Practical-Inferential-Statistics-Guide-For-Data-Science/MRGMH36Y4A"/>
 </p>  
 
 Here, **p** = represents the number of groups
 
 **n = **represents the number of observations in a group
 
-![](https://s3-ap-south-1.amazonaws.com/av-blog-media/wp-content/uploads/2017/01/30062117/image_41.png)\=  represents the mean of a particular group
+![](https://neerajsarwan.github.io/files/posts/Comprehensive-And-Practical-Inferential-Statistics-Guide-For-Data-Science/0O2MTBOUD2)\=  represents the mean of a particular group
 
 **X (bar)** = represents the mean of all the observations
 
@@ -440,7 +440,7 @@ Suppose there are 3 chocolates in town and their sweetness is quantified by some
                                                                   Type A                    Type B                   Type C
 
 <p align="center">
-  <img src="https://s3-ap-south-1.amazonaws.com/av-blog-media/wp-content/uploads/2017/01/20071549/Screenshot-from-2017-01-20-04-43-12.png"/>
+  <img src="https://neerajsarwan.github.io/files/posts/Comprehensive-And-Practical-Inferential-Statistics-Guide-For-Data-Science/5FKYX5VWEA"/>
 </p>  
 
 Here, first we have calculated the sample mean and sample standard deviation for you.
@@ -508,13 +508,13 @@ Let us state our Hypothesis first. Null Hypothesis: The claims are True Alternat
 
 where,  
 
-![](https://s3-ap-south-1.amazonaws.com/av-blog-media/wp-content/uploads/2017/01/30062343/Image_5.png)\= sample or observed values
+![](https://neerajsarwan.github.io/files/posts/Comprehensive-And-Practical-Inferential-Statistics-Guide-For-Data-Science/D2HNJHZEJX)\= sample or observed values
 
- ![](https://s3-ap-south-1.amazonaws.com/av-blog-media/wp-content/uploads/2017/01/30062444/Image_61.png)\= population values
+ ![](https://neerajsarwan.github.io/files/posts/Comprehensive-And-Practical-Inferential-Statistics-Guide-For-Data-Science/9TRO3RNIOI)\= population values
 
 The summation is taken over all the levels of a categorical variable.  
 
-![](https://s3-ap-south-1.amazonaws.com/av-blog-media/wp-content/uploads/2017/01/30062444/Image_61.png)\= **\[n \* ![](https://s3-ap-south-1.amazonaws.com/av-blog-media/wp-content/uploads/2017/01/30062619/image_7.png)\]**  
+![](https://neerajsarwan.github.io/files/posts/Comprehensive-And-Practical-Inferential-Statistics-Guide-For-Data-Science/9TRO3RNIOI)\= **\[n \* ![](https://neerajsarwan.github.io/files/posts/Comprehensive-And-Practical-Inferential-Statistics-Guide-For-Data-Science/XM11TUN5TC)\]**  
 
 Expected value of a level (i) is equal to the product of sample size and percentage of it in the population.
 
@@ -546,12 +546,12 @@ With the help of ANOVA techniques, we can analyse a model performance very much 
 Mathematically, it is calculated as:  
 
 <p align="center">
-  <img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/97d89b80ceaa5808302275e61e55496360de0942"/>
+  <img src="https://neerajsarwan.github.io/files/posts/Comprehensive-And-Practical-Inferential-Statistics-Guide-For-Data-Science/JS1FTYNA8P"/>
 </p>  
 
 where,  
 
-**![](https://s3-ap-south-1.amazonaws.com/av-blog-media/wp-content/uploads/2017/01/30063257/Image_8.png)\[hat\]** = predicted value  
+**![](https://neerajsarwan.github.io/files/posts/Comprehensive-And-Practical-Inferential-Statistics-Guide-For-Data-Science/9SLFZW13SR)\[hat\]** = predicted value  
 
 **y(bar)** = mean of the actual y values.  
 
@@ -564,12 +564,12 @@ where,
 Mathematically, it is calculated as:  
 
 <p align="center">
-  <img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/2f6526aa487b4dc460792bf1eeee79b2bba77709"/>
+  <img src="https://neerajsarwan.github.io/files/posts/Comprehensive-And-Practical-Inferential-Statistics-Guide-For-Data-Science/M32F4UN07Z"/>
 </p>   
 
 where,  
 
-**![](https://s3-ap-south-1.amazonaws.com/av-blog-media/wp-content/uploads/2017/01/30063257/Image_8.png)** = actual 'y ' value  
+**![](https://neerajsarwan.github.io/files/posts/Comprehensive-And-Practical-Inferential-Statistics-Guide-For-Data-Science/9SLFZW13SR)** = actual 'y ' value  
 
 **f(x)** = predicted value  
 

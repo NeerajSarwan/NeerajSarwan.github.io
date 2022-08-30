@@ -19,12 +19,12 @@ tags:
 <li>You type a sentence in google translate in English and get an Equivalent Chinese conversion.</li>
 </ol>
 <p>&nbsp;</p>
-<p><img class="aligncenter wp-image-36152 size-full" src="https://s3-ap-south-1.amazonaws.com/av-blog-media/wp-content/uploads/2017/06/06052154/collage.png" alt="" width="927" height="93" /></p>
+<p><img class="aligncenter wp-image-36152 size-full" src="https://neerajsarwan.github.io/files/posts/An-Intuitive-Understanding-Of-Word-Embeddings/9O71BWPFGI" alt="" width="927" height="93" /></p>
 <p>&nbsp;</p>
 <p>So what do the above examples have in common? You possible guessed it right - <strong>TEXT processing</strong>.</p>
 <p>All the above three scenarios deal with humongous amount of text to perform different range of tasks like clustering in the google search example, classification in the second and Machine Translation in the third. Humans can deal with text format quite intuitively but provided we have millions of documents being generated in a single day, we cannot have humans performing the above the three tasks. It is neither scalable nor effective.</p>
 <p>&nbsp;</p>
-<p><img class="size-medium wp-image-36158 aligncenter" style="display: block; margin-left: auto; margin-right: auto;" src="https://s3-ap-south-1.amazonaws.com/av-blog-media/wp-content/uploads/2017/06/06064148/joke-297x300.jpg" alt="" width="297" height="300" /></p>
+<p><img class="size-medium wp-image-36158 aligncenter" style="display: block; margin-left: auto; margin-right: auto;" src="https://neerajsarwan.github.io/files/posts/An-Intuitive-Understanding-Of-Word-Embeddings/ARUHOPKB7Q" alt="" width="297" height="300" /></p>
 <p>&nbsp;</p>
 <p>So, how do we make computers of today perform clustering, classification etc on a text data since we know that they are generally inefficient at handling and processing strings or texts for any fruitful outputs? <br />Sure, a computer can match two strings and tell you whether they are same or not. But how do we make computers tell you about football or Ronaldo when you search for Messi? How do you make a computer understand that &ldquo;Apple&rdquo; in &ldquo;Apple is a tasty fruit&rdquo; is a fruit that can be eaten and not a company?<br />The answer to the above questions lie in creating a representation for words that capture their <em>meanings</em>, <em>semantic relationships</em> and the different types of contexts they are used in. And all of these are implemented by using Word Embeddings or numerical representations of texts so that computers may handle them. Below, we will see formally what are Word Embeddings and their different types and how we can actually implement them to perform the tasks like returning efficient Google search results.</p>
 <p>&nbsp;</p>
@@ -130,7 +130,7 @@ tags:
 </ol>
 <p>&nbsp;</p>
 <p>Below is a representational image of the matrix M for easy understanding.</p>
-<p><img class="aligncenter wp-image-36035 size-full" style="display: block; margin-left: auto; margin-right: auto;" src="https://s3-ap-south-1.amazonaws.com/av-blog-media/wp-content/uploads/2017/06/04164920/count-vector.png" alt="" width="372" height="276" /></p>
+<p><img class="aligncenter wp-image-36035 size-full" style="display: block; margin-left: auto; margin-right: auto;" src="https://neerajsarwan.github.io/files/posts/An-Intuitive-Understanding-Of-Word-Embeddings/E1MTR0IJ1J" alt="" width="372" height="276" /></p>
 <p>&nbsp;</p>
 <h4>2.1.2 TF-IDF vectorization</h4>
 <p>This is another method which is based on the frequency method but it is different to the count vectorization in the sense that it takes into account not just the occurrence of a word in a single document but in the entire corpus. So, what is the rationale behind this? Let us try to understand.</p>
@@ -140,7 +140,7 @@ tags:
 <p>So, how exactly does TF-IDF work?</p>
 <p>Consider the below sample table which gives the count of terms(tokens/words) in two documents.</p>
 <p>&nbsp;</p>
-<p><img class="wp-image-36037 size-full aligncenter" style="display: block; margin-left: auto; margin-right: auto;" src="https://s3-ap-south-1.amazonaws.com/av-blog-media/wp-content/uploads/2017/06/04171138/Tf-IDF.png" alt="" width="494" height="208" /></p>
+<p><img class="wp-image-36037 size-full aligncenter" style="display: block; margin-left: auto; margin-right: auto;" src="https://neerajsarwan.github.io/files/posts/An-Intuitive-Understanding-Of-Word-Embeddings/VMFTAEFISF" alt="" width="494" height="208" /></p>
 <p>Now, let us define a few terms related to TF-IDF.</p>
 <p>TF = (Number of times term t appears in a document)/(Number of terms in the document)</p>
 <p>So,</p>
@@ -372,7 +372,7 @@ tags:
 <p>Let me illustrate this more clearly. For example, you perform PCA on the above matrix of size VXV. You will obtain V principal components. You can choose k components out of these V components. So, the new matrix will be of the form V X k.</p>
 <p>And, a single word, instead of being represented in V dimensions will be represented in k dimensions while still capturing almost the same semantic meaning. k is generally of the order of hundreds.</p>
 <p>So, what PCA does at the back is decompose Co-Occurrence matrix into three matrices, U,S and V where U and V are both orthogonal matrices. What is of importance is that dot product of U and S gives the word vector representation and V gives the word context representation.</p>
-<p><img class="aligncenter wp-image-36054 size-full" style="display: block; margin-left: auto; margin-right: auto;" src="https://s3-ap-south-1.amazonaws.com/av-blog-media/wp-content/uploads/2017/06/04224842/svd2.png" alt="" width="1515" height="275" /> &nbsp;</p>
+<p><img class="aligncenter wp-image-36054 size-full" style="display: block; margin-left: auto; margin-right: auto;" src="https://neerajsarwan.github.io/files/posts/An-Intuitive-Understanding-Of-Word-Embeddings/IKZTC35ZAP" alt="" width="1515" height="275" /> &nbsp;</p>
 <p>&nbsp;</p>
 <p><strong>Advantages of Co-occurrence Matrix</strong></p>
 <ol>
@@ -398,7 +398,7 @@ tags:
 <p>This corpus may be converted into a training set for a CBOW model as follow.</p>
 <p>The input is shown below. The matrix on the right in the below image contains the one-hot encoded from of the input on the left.</p>
 <p>&nbsp;</p>
-<p><img class="aligncenter wp-image-36044 size-full" src="https://s3-ap-south-1.amazonaws.com/av-blog-media/wp-content/uploads/2017/06/04205949/cbow1.png" alt="" width="1150" height="325" /></p>
+<p><img class="aligncenter wp-image-36044 size-full" src="https://neerajsarwan.github.io/files/posts/An-Intuitive-Understanding-Of-Word-Embeddings/E9FV9FWPMU" alt="" width="1150" height="325" /></p>
 <p>&nbsp;</p>
 <p>The target for a single datapoint say Datapoint 4 is shown as below</p>
 <p>&nbsp;</p>
@@ -434,11 +434,11 @@ tags:
 <p>This matrix shown in the above image is sent into a shallow neural network with three layers: an&nbsp;input layer, a hidden layer and an output layer.</p>
 <p>The output layer is a softmax layer which is used to sum the probabilities obtained in the output layer to 1.</p>
 <p>Now let us see how the forward propagation will work to calculate the hidden layer activation. Let us first see a diagrammatic representation of the CBOW model.</p>
-<p><img class="aligncenter wp-image-36053 size-full" style="display: block; margin-left: auto; margin-right: auto;" src="https://s3-ap-south-1.amazonaws.com/av-blog-media/wp-content/uploads/2017/06/04224109/Screenshot-from-2017-06-04-22-40-29.png" alt="" width="411" height="253" /></p>
+<p><img class="aligncenter wp-image-36053 size-full" style="display: block; margin-left: auto; margin-right: auto;" src="https://neerajsarwan.github.io/files/posts/An-Intuitive-Understanding-Of-Word-Embeddings/LY9CQYTZDU" alt="" width="411" height="253" /></p>
 <p>&nbsp;</p>
 <p>The matrix representation of the above image for a single data point is below.</p>
 <p>&nbsp;</p>
-<p><img class="aligncenter wp-image-36051 size-full" src="https://s3-ap-south-1.amazonaws.com/av-blog-media/wp-content/uploads/2017/06/04222108/Screenshot-from-2017-06-04-22-19-202.png" alt="" width="1507" height="227" /></p>
+<p><img class="aligncenter wp-image-36051 size-full" src="https://neerajsarwan.github.io/files/posts/An-Intuitive-Understanding-Of-Word-Embeddings/NXBZK1K610" alt="" width="1507" height="227" /></p>
 <p>&nbsp;</p>
 <p>The flow is as follows:</p>
 <ol>
@@ -453,11 +453,11 @@ tags:
 <p>&nbsp;</p>
 <p>We saw the above steps for a single context word. Now, what about if we have multiple context words? The image below describes the architecture for multiple context words.</p>
 <p>&nbsp;</p>
-<p><img class="size-medium wp-image-36046 aligncenter" style="display: block; margin-left: auto; margin-right: auto;" src="https://s3-ap-south-1.amazonaws.com/av-blog-media/wp-content/uploads/2017/06/04220606/Screenshot-from-2017-06-04-22-05-44-261x300.png" alt="" width="261" height="300" /></p>
+<p><img class="size-medium wp-image-36046 aligncenter" style="display: block; margin-left: auto; margin-right: auto;" src="https://neerajsarwan.github.io/files/posts/An-Intuitive-Understanding-Of-Word-Embeddings/H18C0UMQK6" alt="" width="261" height="300" /></p>
 <p>&nbsp;</p>
 <p>Below is a matrix representation of the above architecture for an easy understanding.</p>
 <p>&nbsp;</p>
-<p><img class="aligncenter wp-image-36048 size-full" src="https://s3-ap-south-1.amazonaws.com/av-blog-media/wp-content/uploads/2017/06/04221550/Screenshot-from-2017-06-04-22-14-311.png" alt="" width="1475" height="216" /></p>
+<p><img class="aligncenter wp-image-36048 size-full" src="https://neerajsarwan.github.io/files/posts/An-Intuitive-Understanding-Of-Word-Embeddings/BKL91F6J0O" alt="" width="1475" height="216" /></p>
 <p>&nbsp;</p>
 <p>The image above takes 3 context words and predicts the probability of a target word. The input can be assumed as taking three one-hot encoded vectors in the input layer as shown above in red, blue and green.</p>
 <p>So, the input layer will have 3 [1 X V] Vectors in the input as shown above and 1 [1 X V] in the output layer. Rest of the architecture is same as for a 1-context CBOW.</p>
@@ -468,7 +468,7 @@ tags:
 <ol>
 <li>The objective function in MLP is a MSE(mean square error) whereas in CBOW it is negative log likelihood of a word given a set of context i.e -log(p(wo/wi)), where p(wo/wi) is given as</li>
 </ol>
-<p><img class="size-medium wp-image-36055 aligncenter" style="display: block; margin-left: auto; margin-right: auto;" src="https://s3-ap-south-1.amazonaws.com/av-blog-media/wp-content/uploads/2017/06/04230048/AAEAAQAAAAAAAA18AAAAJGNkMGYxMDIxLWY5NjgtNGEzMy1hMjAyLWU4MmI4ZWUwNDNhYw-300x91.jpg" alt="" width="300" height="91" /></p>
+<p><img class="size-medium wp-image-36055 aligncenter" style="display: block; margin-left: auto; margin-right: auto;" src="https://neerajsarwan.github.io/files/posts/An-Intuitive-Understanding-Of-Word-Embeddings/9LJJKSEDWV" alt="" width="300" height="91" /></p>
 <p style="padding-left: 60px;">wo : output word wi: context words</p>
 <p style="padding-left: 30px;">2. The gradient of error with respect to hidden-output weights and input-hidden weights are different since MLP has &nbsp;sigmoid activations(generally) but CBOW has linear activations. The method however to calculate the gradient is same as an MLP.</p>
 <p style="padding-left: 30px;">&nbsp;</p>
@@ -489,18 +489,18 @@ tags:
 <p>C="Hey, this is sample corpus using only one context word."</p>
 <p>Let us construct the training data.</p>
 <p>&nbsp;</p>
-<p><img class="size-medium wp-image-36059 aligncenter" style="display: block; margin-left: auto; margin-right: auto;" src="https://s3-ap-south-1.amazonaws.com/av-blog-media/wp-content/uploads/2017/06/04235354/Capture1-300x222.png" alt="" width="300" height="222" /></p>
+<p><img class="size-medium wp-image-36059 aligncenter" style="display: block; margin-left: auto; margin-right: auto;" src="https://neerajsarwan.github.io/files/posts/An-Intuitive-Understanding-Of-Word-Embeddings/CZEVM6VZPV" alt="" width="300" height="222" /></p>
 <p>&nbsp;</p>
 <p>The input vector for skip-gram is going to be similar to a 1-context CBOW model. Also, the calculations up to hidden layer activations are going to be the same. The difference will be in the target variable.</p>
 <p>Since we have defined a context window of 1 on both the sides, there will be "<strong>two" one hot encoded target variables</strong> and "<strong>two" corresponding outputs</strong> as can be seen by the blue section in the image.</p>
 <p>Two separate errors are calculated with respect to the two target variables and the two error vectors obtained are added element-wise to obtain a final error vector which is propagated back to update the weights.</p>
 <p>The weights between the input and the hidden layer are taken as the word vector representation after training. The loss function or the objective is of the same type as of the CBOW model. The skip-gram architecture is shown below.</p>
 <p>&nbsp;</p>
-<p><img class="size-medium wp-image-36060 aligncenter" style="display: block; margin-left: auto; margin-right: auto;" src="https://s3-ap-south-1.amazonaws.com/av-blog-media/wp-content/uploads/2017/06/05000515/Capture2-276x300.png" alt="" width="276" height="300" /></p>
+<p><img class="size-medium wp-image-36060 aligncenter" style="display: block; margin-left: auto; margin-right: auto;" src="https://neerajsarwan.github.io/files/posts/An-Intuitive-Understanding-Of-Word-Embeddings/7QAIZLBIOU" alt="" width="276" height="300" /></p>
 <p>&nbsp;</p>
 <p>For a better understanding, matrix style structure with calculation has been shown below.</p>
 <p>&nbsp;</p>
-<p><img class="aligncenter wp-image-36079 size-full" src="https://s3-ap-south-1.amazonaws.com/av-blog-media/wp-content/uploads/2017/06/05122225/skip.png" alt="" width="1220" height="266" /></p>
+<p><img class="aligncenter wp-image-36079 size-full" src="https://neerajsarwan.github.io/files/posts/An-Intuitive-Understanding-Of-Word-Embeddings/FL048SD5O0" alt="" width="1220" height="266" /></p>
 <p>&nbsp;</p>
 <p>&nbsp; Let us break down the above image.</p>
 <p>Input layer &nbsp;size - [1 X V], Input hidden weight matrix size - [V X N], Number of neurons in hidden layer - N, Hidden-Output weight matrix size - [N X V], Output layer size - C [1 X V]</p>
@@ -533,12 +533,12 @@ tags:
 </ol>
 <p style="padding-left: 30px;">Below is one interesting visualisation of word2vec.</p>
 <p style="padding-left: 30px;">&nbsp;</p>
-<p><img class="size-medium wp-image-36062 aligncenter" style="display: block; margin-left: auto; margin-right: auto;" src="https://s3-ap-south-1.amazonaws.com/av-blog-media/wp-content/uploads/2017/06/05003425/graph1-300x277.jpg" alt="" width="300" height="277" /></p>
+<p><img class="size-medium wp-image-36062 aligncenter" style="display: block; margin-left: auto; margin-right: auto;" src="https://neerajsarwan.github.io/files/posts/An-Intuitive-Understanding-Of-Word-Embeddings/KN902DQPUE" alt="" width="300" height="277" /></p>
 <p>&nbsp;</p>
 <p>The above image is a t-SNE representation of word vectors in 2 dimension and you can see that two contexts of apple have been captured. One is a fruit and the other company.</p>
 <p>It can be used to perform Machine Translation.</p>
 <p>&nbsp;</p>
-<p><img class="size-medium wp-image-36064 aligncenter" style="display: block; margin-left: auto; margin-right: auto;" src="https://s3-ap-south-1.amazonaws.com/av-blog-media/wp-content/uploads/2017/06/05003807/ml-300x211.png" alt="" width="300" height="211" /></p>
+<p><img class="size-medium wp-image-36064 aligncenter" style="display: block; margin-left: auto; margin-right: auto;" src="https://neerajsarwan.github.io/files/posts/An-Intuitive-Understanding-Of-Word-Embeddings/29YHF5PAJ0" alt="" width="300" height="211" /></p>
 <p>The above graph is a bilingual embedding with chinese in green and english in yellow. If we know the words having similar meanings in chinese and english, the above bilingual embedding can be used to translate one language into the other.</p>
 <p>&nbsp;</p>
 <h2>4. Using pre-trained word vectors</h2>

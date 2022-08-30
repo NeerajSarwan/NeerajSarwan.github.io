@@ -177,7 +177,7 @@ Probably, you guessed it right. It looks like **Bayes Theorem**. Bayes  theorem
 
 ### 3.2 - Bayes Theorem
 
-Bayes Theorem comes into effect when multiple events ![](https://latex.codecogs.com/gif.latex?%5EA%7Bi%7D) form an exhaustive set with another event B. This could be understood with the help of the below diagram.  
+Bayes Theorem comes into effect when multiple events ![](https://neerajsarwan.github.io/files/posts/Bayesian-Statistics-For-Beginners/YFOB97WDA3) form an exhaustive set with another event B. This could be understood with the help of the below diagram.  
 
 <p align="center">
   <img src="https://neerajsarwan.github.io/files/posts/Bayesian-Statistics-for-Beginners/Capture.png"/>
@@ -186,25 +186,25 @@ Bayes Theorem comes into effect when multiple events ![](https://latex.codecogs.
 Now, B can be written as  
 
 <p align="center">
-  <img src="https://latex.codecogs.com/gif.latex?B%3D%5Csum_%7Bi%3D1%7D%5E%7Bn%7D%20B%5Ccap%20A_%7Bi%7D"/>
+  <img src="https://neerajsarwan.github.io/files/posts/Bayesian-Statistics-For-Beginners/RAVB0QB8Y8"/>
 </p>  
 
 So, probability of B can be written as,  
 
 <p align="center">
-  <img src="https://latex.codecogs.com/gif.latex?P%28B%29%3D%5Csum_%7Bi%3D1%7D%5E%7Bn%7D%20P%28B%5Ccap%20A_%7Bi%7D%29"/>
+  <img src="https://neerajsarwan.github.io/files/posts/Bayesian-Statistics-For-Beginners/5PG92MBPOO"/>
 </p>  
 
 But  
 
 <p align="center">
-  <img src="https://s3-ap-south-1.amazonaws.com/av-blog-media/wp-content/uploads/2016/06/23104634/Capture1.png"/>
+  <img src="https://neerajsarwan.github.io/files/posts/Bayesian-Statistics-For-Beginners/MDKK6Q2IW6"/>
 </p>  
 
 So, replacing P(B) in the equation of conditional probability we get  
 
 <p align="center">
-  <img src="https://s3-ap-south-1.amazonaws.com/av-blog-media/wp-content/uploads/2016/06/23105401/Capture2.png"/>
+  <img src="https://neerajsarwan.github.io/files/posts/Bayesian-Statistics-For-Beginners/9S84AZUZAV"/>
 </p>  
 
 This is the equation of **Bayes Theorem**.  
@@ -256,16 +256,16 @@ Lets recap what we learned about the likelihood function. So, we learned that:
 
 _It is the probability of observing a particular number of heads in a particular number of flips for a given fairness of coin. This means our probability of observing heads/tails depends upon the fairness of coin (θ)._
 
-**P(y=1|θ)= ![](https://latex.codecogs.com/gif.latex?%5Ctheta%20%5Ey)** 
+**P(y=1|θ)= ![](https://neerajsarwan.github.io/files/posts/Bayesian-Statistics-For-Beginners/Y539HOYNMM)** 
 \[If coin is fair θ=0.5, probability of observing heads (y=1) is 0.5\]   
 
-**P(y=0|θ)=![](https://latex.codecogs.com/gif.latex?%281-%5Ctheta%20%29%5E%7B1-y%7D)** 
+**P(y=0|θ)=![](https://neerajsarwan.github.io/files/posts/Bayesian-Statistics-For-Beginners/DYS8MR9KYQ)** 
 \[If coin is fair θ=0.5, probability of observing tails(y=0) is 0.5\]  
 
 It is worth noticing that representing 1 as heads and 0 as tails is just a mathematical notation to formulate a model. We can combine the above mathematical definitions into a single definition to represent the probability of both the outcomes.
 
 <p align="center">
-  P(y|θ)=<img src="https://latex.codecogs.com/gif.latex?%5Ctheta%20%5Ey.%281-%5Ctheta%20%29%5E%7B1-y%7D"/>
+  P(y|θ)=<img src="https://neerajsarwan.github.io/files/posts/Bayesian-Statistics-For-Beginners/Y539HOYNMM.%281-%5Ctheta%20%29%5E%7B1-y%7D"/>
 </p>  
 
 This is called the **Bernoulli Likelihood Function** and the task of coin flipping is called Bernoulli's trials.
@@ -277,18 +277,18 @@ This is called the **Bernoulli Likelihood Function** and the task of coin flippi
 And, when we want to see a series of heads or flips, its probability is given by:  
 
 <p align="center">
-  <img src="https://latex.codecogs.com/gif.latex?P%28y_%7B1%7D%2Cy_%7B2%7D%2C...y_%7Bn%7D%7C%5Ctheta%20%29%3D%5Cprod_%7B1%7D%5E%7Bn%7DP%28y_%7Bi%7D%7C%5Ctheta%20%29"/>
+  <img src="https://neerajsarwan.github.io/files/posts/Bayesian-Statistics-For-Beginners/OLHY73TZ9I"/>
 </p>  
 
 <p align="center">
-  <img src="https://latex.codecogs.com/gif.latex?P%28y_%7B1%7D%2Cy_%7B2%7D%2C...%2Cy_%7Bn%7D%7C%5Ctheta%20%29%3D%5Cprod_%7B1%7D%5E%7Bn%7D%5Ctheta%20%5E%7By_%7Bi%7D%7D.%281-%5Ctheta%20%29%5E%7B1-y_%7Bi%7D%7D"/>
+  <img src="https://neerajsarwan.github.io/files/posts/Bayesian-Statistics-For-Beginners/2UTSR3CSOE"/>
 </p>  
 
 
 Furthermore, if we are interested in the probability of number of heads _z_ turning up in _N_ number of flips then the probability is given by:  
 
 <p align="center">
-  <img src="https://latex.codecogs.com/gif.latex?P%28z%2CN%7C%5Ctheta%20%29%3D%5Ctheta%20%5E%7Bz%7D.%281-%5Ctheta%29%5E%7BN-z%7D"/>
+  <img src="https://neerajsarwan.github.io/files/posts/Bayesian-Statistics-For-Beginners/0Y10PWVNFL"/>
 </p>  
 
 <br>
@@ -303,13 +303,13 @@ Don't worry. Mathematicians have devised methods to mitigate this problem too. I
 
 Well, the mathematical function used to represent the prior beliefs is known as **_beta distribution_**. It has some very nice mathematical properties which enable us to model our beliefs about a binomial distribution.
 
-Probability density function of beta distribution is of the form :  ![](https://latex.codecogs.com/gif.latex?x%5E%7B%5Calpha%20-1%7D.%281-x%29%5E%7B%5Cbeta%20-1%7D/B%28%5Calpha%20%2C%5Cbeta%20%29)
+Probability density function of beta distribution is of the form :  ![](https://neerajsarwan.github.io/files/posts/Bayesian-Statistics-For-Beginners/UORJX804YD)
 
 where, our focus stays on numerator. The denominator is there just to ensure that the total probability density function upon integration evaluates to 1.
 
 `α` and `β` are called the shape deciding parameters of the density function. Here `α` is analogous to number of heads in the trials and `β` corresponds to the number of tails. The diagrams below will help you visualize the beta distributions for different values of `α` and `β`
 
-![Bayesian update using Beta-Binomial Model](https://s3.amazonaws.com/quantstart/media/images/qs-bayes-bernoulli.png) You too can draw the beta distribution for yourself using the following code in R:  
+![Bayesian update using Beta-Binomial Model](https://neerajsarwan.github.io/files/posts/Bayesian-Statistics-For-Beginners/O2PK0T6XYG) You too can draw the beta distribution for yourself using the following code in R:  
 
 `> library(stats)`  
 `> par(mfrow=c(3,2))`  
@@ -324,11 +324,11 @@ where, our focus stays on numerator. The denominator is there just to ensure th
 _Note:_ `α` and `β` are intuitive to understand since they can be calculated by knowing the mean (μ) and standard deviation (σ) of the distribution. In fact, they are related as :
 
 <p align="center">
-  <img src="https://latex.codecogs.com/gif.latex?%5Cmu%20%3D%20%5Cfrac%7B%5Calpha%7D%7B%5Calpha%20&plus;%20%5Cbeta%7D"/>
+  <img src="https://neerajsarwan.github.io/files/posts/Bayesian-Statistics-For-Beginners/LW9S9BZ8M1"/>
 </p>  
 
 <p align="center">
-  <img src="https://latex.codecogs.com/gif.latex?%5Csigma%20%3D%20%5Csqrt%7B%5Cfrac%7B%5Calpha%20%5Cbeta%7D%7B%28%5Calpha%20&plus;%20%5Cbeta%29%5E2%20%28%5Calpha%20&plus;%20%5Cbeta%20&plus;%201%29%7D%7D"/>
+  <img src="https://neerajsarwan.github.io/files/posts/Bayesian-Statistics-For-Beginners/WRJVHYBKIS"/>
 </p>  
 
 
@@ -349,21 +349,21 @@ Let's calculate posterior belief using bayes theorem.
 **Calculating posterior belief using Bayes Theorem**  
 
 <p align="center">
-  <img src="https://latex.codecogs.com/gif.latex?P%28%5Ctheta%20%7Cz%2CN%29%3DP%28z%2CN%7C%5Ctheta%29P%28%5Ctheta%29/P%28z%2CN%29"/>
+  <img src="https://neerajsarwan.github.io/files/posts/Bayesian-Statistics-For-Beginners/XAY8ZEQ7HF"/>
 </p>  
 
 <p align="center">
-  <img src="https://latex.codecogs.com/gif.latex?%3D%5Ctheta%5E%7Bz%7D%281-%5Ctheta%29%5E%7BN-z%7D.%5Ctheta%5E%7B%5Calpha-1%7D%281-%5Ctheta%29%5E%7B%5Cbeta-1%7D/%5BB%28%5Calpha%2C%5Cbeta%29P%28z%2CN%29%5D"/>
+  <img src="https://neerajsarwan.github.io/files/posts/Bayesian-Statistics-For-Beginners/GMQNQ5GHAZ"/>
 </p>  
 
 <p align="center">
-  <img src="https://latex.codecogs.com/gif.latex?%3D%5Ctheta%5E%7Bz&plus;%5Calpha-1%7D%281-%5Ctheta%29%5E%7BN-z&plus;%5Cbeta-1%7D/%5BB%28z&plus;%5Calpha%2CN-z&plus;%5Cbeta%29%5D"/>
+  <img src="https://neerajsarwan.github.io/files/posts/Bayesian-Statistics-For-Beginners/85LTX0FFVG"/>
 </p>  
 
 Now, our posterior belief becomes,    
 
 <p align="center">
-  <img src="https://latex.codecogs.com/gif.latex?P%28%5Ctheta%7Cz&plus;%5Calpha%2CN-z&plus;%5Cbeta%29"/>
+  <img src="https://neerajsarwan.github.io/files/posts/Bayesian-Statistics-For-Beginners/B5IWAVPKXR"/>
 </p>  
 
 This is interesting. Just knowing the mean and standard distribution of our belief about the parameter `θ` and by observing the number of heads in N flips, we can update our belief about the model parameter(`θ`).
@@ -444,7 +444,7 @@ In panel A (shown above): left bar (M1) is the prior probability of the null hyp
 
 
 <p align="center">
-  <img src="https://latex.codecogs.com/gif.latex?BF%3D%20%5Cfrac%7BP%28M%3Dnull%7Cz%2CN%29%7D%7BP%28M%3Dalt%7Cz%2CN%29%7D/%5Cfrac%7BP%28M%3Dnull%29%7D%7BP%28M%3Dalt%29%7D"/>
+  <img src="https://neerajsarwan.github.io/files/posts/Bayesian-Statistics-For-Beginners/PRDQR1WPLF"/>
 </p>  
 
 

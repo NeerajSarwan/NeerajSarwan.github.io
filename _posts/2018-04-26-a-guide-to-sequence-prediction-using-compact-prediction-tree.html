@@ -8,7 +8,7 @@ tags:
 ---
 <h2>Introduction</h2>
 <p>Sequence prediction is one of the hottest application of Deep Learning these days. From building recommendation systems to speech recognition and natural language processing, its potential is seemingly endless. This is enabling never-thought-before solutions to emerge in the industry and is driving innovation. There are many different ways to perform sequence prediction such as using Markov models, Directed Graphs etc. from the Machine Learning domain and&nbsp; RNNs/LSTMs from the Deep Learning domain.</p>
-<p><img class="aligncenter wp-image-43655" style="display: block; margin-left: auto; margin-right: auto;" src="https://s3-ap-south-1.amazonaws.com/av-blog-media/wp-content/uploads/2018/04/background-2462428_960_720.jpg" alt="" width="276" height="275" /></p>
+<p><img class="aligncenter wp-image-43655" style="display: block; margin-left: auto; margin-right: auto;" src="https://neerajsarwan.github.io/files/posts/A-Guide-To-Sequence-Prediction-Using-Compact-Prediction-Tree/46LCPYFZO2" alt="" width="276" height="275" /></p>
 <p>In this article, we will see how we can perform sequence prediction using a relatively unknown algorithm called <strong>Compact Prediction Tree (CPT)</strong>. You'll see how this is a surprisingly simple technique, yet it's more powerful than some very well known methods, such as Markov Methods, Directed Graphs, etc.</p>
 <p><em>I recommend reading this article before going further -&nbsp;<a href="https://www.analyticsvidhya.com/blog/2018/04/sequence-modelling-an-introduction-with-practical-use-cases/" target="_blank" rel="noopener">A Must-Read Introduction to Sequence Modelling(with use cases)</a>. </em><em>In this, Tavish&nbsp;introduced us to an entirely new class of problems called Sequence Modelling, along with some very good examples of their use cases and applications.</em></p>
 <p>&nbsp;</p>
@@ -71,7 +71,7 @@ tags:
 <p>A Prediction Tree is basically a <a href="https://en.wikipedia.org/wiki/Trie" target="_blank" rel="noopener">trie</a> data structure which compresses the entire training data into the form of a tree. For readers who are not aware of how a trie structure works, the trie structure diagram for the below two sequences will clarify things.</p>
 <p><strong>Sequence 1:</strong> A, B, C</p>
 <p><strong>Sequence 2:</strong> A, B, D</p>
-<p><img class="size-medium wp-image-43605 aligncenter" style="display: block; margin-left: auto; margin-right: auto;" src="https://s3-ap-south-1.amazonaws.com/av-blog-media/wp-content/uploads/2018/04/Screenshot-from-2018-04-19-17-31-17-300x276.png" alt="" width="300" height="276" /></p>
+<p><img class="size-medium wp-image-43605 aligncenter" style="display: block; margin-left: auto; margin-right: auto;" src="https://neerajsarwan.github.io/files/posts/A-Guide-To-Sequence-Prediction-Using-Compact-Prediction-Tree/XPS9YTRKPW" alt="" width="300" height="276" /></p>
 <p>The Trie data structure starts with the first element A of the sequence A,B,C and adds it to the root node. Then B gets added to A and C to B. The Trie again starts at the root node for every new sequence and if an element is already added to the structure, then it skips adding it again. The resulting structure is shown above. So this is how a Prediction Tree compresses the training data effectively.</p>
 <p>&nbsp;</p>
 <h3>2. Inverted Index (II)</h3>
@@ -121,17 +121,17 @@ tags:
 <p>&nbsp;</p>
 <h3>Training Phase</h3>
 <p>The training phase consists of building the Prediction Tree, Inverted Index (II), and the LookUp Table (LT) simultaneously. We will now look at the entire training process phase.</p>
-<p><strong>Step 1:</strong> Insertion of A,B,C. <img class="aligncenter size-medium" src="https://d2mxuefqeaa7sj.cloudfront.net/s_775E507249226389559AB01E6DD2E53D15F2A8C38333020C082B61ECBA1DF808_1524134499580_image.png" width="679" height="549" /></p>
+<p><strong>Step 1:</strong> Insertion of A,B,C. <img class="aligncenter size-medium" src="https://neerajsarwan.github.io/files/posts/A-Guide-To-Sequence-Prediction-Using-Compact-Prediction-Tree/ABC.png" width="679" height="549" /></p>
 <p>We already have a root node and a current node variable set to root node initially.</p>
 <p>We start with A, and check if A exists as the child of the root node. If it does not, we add A to the child list of the root node, add an entry of A in Inverted Index with value <em>seq1,</em> and then move the current node to A.</p>
 <p>We look at the next item, i.e B, and see if B exists as the child of the current node, i.e, A. If not, we will add B to the child list of A, add an entry of B in the Inverted Index with value <em>seq1 </em>and&nbsp;then move the current node to B.</p>
 <p>We repeat the above procedure till we are done adding the last element of <em>seq1</em>. Finally, we will add the last node of <em>seq1</em>, C, to the LookUp table with key = &ldquo;<em>seq1</em>&rdquo; and value = node(C). &nbsp;</p>
 <p>&nbsp;</p>
-<p><strong>Step 2:</strong> Insertion of A,B. <img class="aligncenter size-medium" src="https://d2mxuefqeaa7sj.cloudfront.net/s_775E507249226389559AB01E6DD2E53D15F2A8C38333020C082B61ECBA1DF808_1524133938420_image.png" width="756" height="534" /></p>
+<p><strong>Step 2:</strong> Insertion of A,B. <img class="aligncenter size-medium" src="https://neerajsarwan.github.io/files/posts/A-Guide-To-Sequence-Prediction-Using-Compact-Prediction-Tree/AB.png" width="756" height="534" /></p>
 <p>&nbsp;</p>
-<p>&nbsp; <strong>Step 3:</strong> Insertion of A,B,D,C. <img class="aligncenter size-medium" src="https://d2mxuefqeaa7sj.cloudfront.net/s_775E507249226389559AB01E6DD2E53D15F2A8C38333020C082B61ECBA1DF808_1524134187040_image.png" width="749" height="549" /></p>
+<p>&nbsp; <strong>Step 3:</strong> Insertion of A,B,D,C. <img class="aligncenter size-medium" src="https://neerajsarwan.github.io/files/posts/A-Guide-To-Sequence-Prediction-Using-Compact-Prediction-Tree/ABDC.png" width="749" height="549" /></p>
 <p>&nbsp;</p>
-<p>&nbsp; <strong>Step 4:</strong> Insertion of B,C. <img class="alignnone size-medium" src="https://d2mxuefqeaa7sj.cloudfront.net/s_775E507249226389559AB01E6DD2E53D15F2A8C38333020C082B61ECBA1DF808_1524134438989_image.png" width="772" height="547" /></p>
+<p>&nbsp; <strong>Step 4:</strong> Insertion of B,C. <img class="alignnone size-medium" src="https://neerajsarwan.github.io/files/posts/A-Guide-To-Sequence-Prediction-Using-Compact-Prediction-Tree/BC.png" width="772" height="547" /></p>
 <p>&nbsp;</p>
 <p>We do keep doing this till we exhaust every row in the training dataset (remember, a single row represents a single sequence). We now have all the required data structures in place to start making predictions on the test dataset. Let&rsquo;s have a look at the prediction phase now.</p>
 <p>&nbsp;</p>
