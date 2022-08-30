@@ -503,7 +503,7 @@ Let us understand this with help of an example. Suppose a company that manufactu
 Let us state our Hypothesis first. Null Hypothesis: The claims are True Alternate Hypothesis: The claims are False. Chi-Square Test is given by:  
 
 <p align="center">
-  <img src="http://www.statisticshowto.com/wp-content/uploads/2013/09/chi-square-formula.jpg"/>
+  <img src="https://neerajsarwan.github.io/files/posts/Comprehensive-And-Practical-Inferential-Statistics-Guide-For-Data-Science/chi-square-formula.jpeg"/>
 </p>  
 
 where,  
